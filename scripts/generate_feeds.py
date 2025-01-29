@@ -10,6 +10,7 @@ def load_releases():
     
     processed = []
     for release in releases:
+        # 条件1：跳过草稿和没有 torrent 的 release
         if release.get('draft', False):
             continue
         torrent_asset = next((a for a in release['assets'] if a['name'] == 'peerbanhelper.torrent'), None)
@@ -27,8 +28,9 @@ def load_releases():
             'mirror_url': f"https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/{release['tag_name']}/peerbanhelper.torrent"
         })
     
+    # 按发布时间倒序排序后取前50个
     processed.sort(key=lambda x: datetime.fromisoformat(x['pub_date'].replace('Z', '+00:00')), reverse=True)
-    return processed
+    return processed[:50]  # 条件2：只保留最近50个
 
 def generate_feed(entries, include_prerelease, use_mirror):
     rss = Element('rss', {'version': '2.0'})
