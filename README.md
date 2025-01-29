@@ -4,8 +4,8 @@
 
 ## 源文件解释
 
-* `github.feed.xml` 包含最近 50 个正式版 PeerBanHelper 的版本文件
-* `github.feed.prerelease.xml` 包含最近 50 个正式版或测试版的 PeerBanHelper 版本文件
+* `github.feed.xml` 包含最近 50 个正式版 PeerBanHelper 的版本文件 [Github Raw](https://raw.githubusercontent.com/PBH-BTN/peerbanhelper-torrent-updates/refs/heads/master/feeds/github.feed.xml)
+* `github.feed.prerelease.xml` 包含最近 50 个正式版或测试版的 PeerBanHelper 版本文件 [Github Raw](https://raw.githubusercontent.com/PBH-BTN/peerbanhelper-torrent-updates/refs/heads/master/feeds/github.feed.prerelease.xml)
 
 ## 镜像文件
 
