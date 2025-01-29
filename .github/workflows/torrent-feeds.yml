@@ -38,6 +38,7 @@ jobs:
     - name: Generate RSS files
       run: |
         mkdir -p feeds
+        pip install -r scripts/requirements.txt  # 新增依赖安装
         python3 scripts/generate_feeds.py
 
     - name: Commit and push
