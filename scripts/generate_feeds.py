@@ -48,7 +48,7 @@ def convert_markdown_to_html(text: str) -> str:
         )
         
         # 添加基础排版样式
-        return f'<div style="white-space: pre-wrap; font-family: sans-serif">{html}</div>'
+        return html
     except Exception as e:
         logger.error(f"Markdown 转换失败: {str(e)}")
         return escape(text)
@@ -146,9 +146,9 @@ def generate_rss_feed(entries: list, include_prerelease: bool, use_mirror: bool)
 
         item = SubElement(channel, 'item')
         SubElement(item, 'title').text = escape(entry['title'])
-        
+
         description = SubElement(item, 'description')
-        description.text = escape(entry['description'])  # 内容已预先转换为 HTML
+        description.text = '<![CDATA[{}]]>'.format(entry['description'])  # 使用 CDATA 包裹
         
         pub_date = datetime.strptime(
             entry['pub_date'], 
