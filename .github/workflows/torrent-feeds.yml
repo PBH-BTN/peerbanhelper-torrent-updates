@@ -1,0 +1,49 @@
+name: Generate Torrent RSS Feeds
+
+on:
+  schedule:
+    - cron: '0 */1 * * *'  # 每6小时运行一次
+  workflow_dispatch:
+
+jobs:
+  generate-feeds:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Install GitHub CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl
+        curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+        echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list >/dev/null
+        sudo apt-get update
+        sudo apt-get install -y gh
+
+    - name: Fetch Releases
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh api \
+          -H "Accept: application/vnd.github.v3+json" \
+          /repos/PBH-BTN/PeerBanHelper/releases \
+          --paginate > releases.json
+
+    - name: Generate RSS files
+      run: |
+        mkdir -p feeds
+        python3 scripts/generate_feeds.py
+
+    - name: Commit and push
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add feeds/*.xml
+        git commit -m "Update torrent RSS feeds [skip ci]"
+        git push
