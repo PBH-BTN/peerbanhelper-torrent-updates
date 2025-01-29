@@ -5,6 +5,22 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v7.4.0-Beta2</title>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相对 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta1"&gt;v7.4.0-Beta1&lt;/a&gt; 作出的更改：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;现在 DNSJAVA 和 SQLITE_VACUUM 实验默认在所有参与实验室功能的用户上启用&lt;/li&gt;
+&lt;li&gt;IPFS 实验现在默认对所有用户禁用&lt;/li&gt;
+&lt;li&gt;修复构建脚本中的数个错误（可能仍有错误）&lt;/li&gt;
+&lt;/ol&gt;]]&gt;</description>
+      <pubDate>Wed, 29 Jan 2025 18:19:21 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta2</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.0-Beta2/peerbanhelper.torrent" length="130747" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.0-Beta1</title>
       <description>&lt;![CDATA[&lt;blockquote&gt;
 &lt;p&gt;[!WARNING]&lt;br /&gt;
