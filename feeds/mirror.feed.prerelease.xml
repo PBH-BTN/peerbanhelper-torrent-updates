@@ -5,6 +5,34 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v7.4.2</title>
+      <description>&lt;![CDATA[&lt;p&gt;7.4.1/2 是 7.4.0 系列的一个补丁，有关 7.4.0 的功能性更新日志，请见：&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0"&gt;v7.4.0发行日志&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本必须为 v1.3.0 或者更高版本，在&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT/releases"&gt;这里&lt;/a&gt;下载 BiglyBT 下载器的适配器。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复 BiglyBT 下载器可能循环重复封禁，IPBlackList 等 IP 封禁模块现在等待握手确认连接有效后才会工作&lt;/li&gt;
+&lt;li&gt;修复 BiglyBT 下载器适配器封禁实施方法不合理导致产生大量半开连接的问题&lt;/li&gt;
+&lt;li&gt;修复 BiglyBT 下载器未提供 UNBAN_PEER 特性标志，导致 PeerBanHelper 的部分功能在其上不起作用的问题&lt;/li&gt;
+&lt;li&gt;修复了英语环境下，缺失 VIEW_ABOUT_CREDIT 翻译词条的问题&lt;/li&gt;
+&lt;li&gt;修复当 data/config 路径为文件时，PeerBanHelper 直接报错退出的问题，现在会首先尝试删除并重建为目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;性能改进&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;日志刷写现在移动到单独的平台线程&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.2&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.2&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 01 Feb 2025 17:35:03 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.2</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.2/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.0</title>
       <description>&lt;![CDATA[&lt;h2&gt;新增功能&lt;/h2&gt;
 &lt;h3&gt;新的发行平台&lt;/h3&gt;
