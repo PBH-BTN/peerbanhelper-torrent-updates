@@ -5,6 +5,16 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v7.4.3</title>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[上游] 更新 Methanol 请求库以修复在部分情况下请求下载器 API 会导致 PeerBanHelper 封禁线程挂起卡住触发 WatchDog 超时检测的问题&lt;/li&gt;
+&lt;/ul&gt;]]&gt;</description>
+      <pubDate>Mon, 10 Feb 2025 19:12:11 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.3/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.2</title>
       <description>&lt;![CDATA[&lt;p&gt;7.4.1/2 是 7.4.0 系列的一个补丁，有关 7.4.0 的功能性更新日志，请见：&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0"&gt;v7.4.0发行日志&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
