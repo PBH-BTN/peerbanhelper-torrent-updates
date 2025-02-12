@@ -9,7 +9,12 @@
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[上游] 更新 Methanol 请求库以修复在部分情况下请求下载器 API 会导致 PeerBanHelper 封禁线程挂起卡住触发 WatchDog 超时检测的问题&lt;/li&gt;
-&lt;/ul&gt;]]&gt;</description>
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.3&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.3&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
       <pubDate>Mon, 10 Feb 2025 19:12:11 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.3/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
