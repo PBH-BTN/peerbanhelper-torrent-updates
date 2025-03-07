@@ -5,6 +5,56 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v7.4.4</title>
+      <description>&lt;![CDATA[&lt;p&gt;由于主要开发者 @Ghost-chu 目前面临实习和工作的问题，因此在 25 年 6 月份之前都不会再有时间更新本项目。除非存在恶性错误，否则 v7.4.4 将是接下来的三个月内的最后一个正式版本。&lt;br /&gt;
+v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在任何重大错误。&lt;br /&gt;
+在此期间我们仍然欢迎提交新的错误修复拉取请求，但功能性更新可能会延后处理。&lt;/p&gt;
+&lt;p&gt;BTN 网络已经测试无人值守功能了许久，因此 BTN 的相关服务应该仍然能够正常工作而不受影响。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;对于使用 GitHub 下载困难的用户，可以从 Releases 中下载 .torrent 种子文件，通过 BT 网络下载 PeerBanHelper 安装程序。&lt;br /&gt;
+您也可以订阅 &lt;a href="https://github.com/PBH-BTN/peerbanhelper-torrent-updates"&gt;RSS 源&lt;/a&gt; 以自动下载新版本的 PeerBanHelper 安装程序，并为其它用户做种以优化传递。&lt;/p&gt;
+&lt;h2&gt;新增功能&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;实验性的通知推送渠道 Bark @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;默认配置文件更改&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;去除默认配置文件中重复的 ULA IP CIDR 范围 @thrive7776 @Gaojianli &lt;/li&gt;
+&lt;li&gt;更新 profile.yml 中有关 IPV6 地址的规则以适应当前反吸血网络环境 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;更新配置文件的 BTN 服务器地址到新服务器地址，旧的地址将在未来停用 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修正拼写错误 @CreeperAWA &lt;/li&gt;
+&lt;li&gt;修复自动生成的 Portable 批处理文件换行符被错误替换为 LF 而不是 CRLF 的问题，这导致在 Windows 平台上 Portable 包的启动脚本出现语法错误 @Gaojianli &lt;/li&gt;
+&lt;li&gt;修复 Windows 平台下，部分系统在启动时因无法释放 EcoQosAPI 所需的动态链接库导致崩溃的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复部分用户使用 PTR Blacklist 时出现 &lt;code&gt;java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException&lt;/code&gt; 异常的问题。@Ghost-chu &lt;/li&gt;
+&lt;li&gt;[WebUI] 修复封禁列表中 IPV6 地址主机地址部分没有按标准规范使用 &lt;code&gt;[]&lt;/code&gt; 方括号对括起的问题 @Gaojianli &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;优化和更改&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;减少封禁检查过程中消耗的 RAM 并限制并发检查数量（默认 32），缓解大量 Peers 的情况下可能导致 PBH 耗尽堆内存卡死的问题，作为交换，循环检查性能可能略有下降 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;杂项&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;更新过期的构建脚本 @AstroProfundis @Gaojianli &lt;/li&gt;
+&lt;li&gt;更新 install4j 捆绑 Java 补丁版本 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Sparkle Tracker (Trunker) 更改&lt;/h2&gt;
+&lt;h3&gt;新增功能&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;新增 &lt;a href="https://webtorrent.io/"&gt;WebTorrents&lt;/a&gt; 支持，地址为：&lt;code&gt;wss://tracker.ghostchu-services.top/announce&lt;/code&gt; @Gaojianli &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.4&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.4&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Fri, 07 Mar 2025 17:02:27 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.4</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.4/peerbanhelper.torrent" length="130788" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.3</title>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
 &lt;ul&gt;
