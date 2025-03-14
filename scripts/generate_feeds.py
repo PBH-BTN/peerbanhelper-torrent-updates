@@ -147,6 +147,10 @@ def generate_rss_feed(entries: list, include_prerelease: bool, use_mirror: bool)
         item = SubElement(channel, 'item')
         SubElement(item, 'title').text = escape(entry['title'])
 
+        # 添加 GUID 元素（关键修改）
+        guid = SubElement(item, 'guid', isPermaLink="true")
+        guid.text = entry['html_url']
+
         description = SubElement(item, 'description')
         description.text = '<![CDATA[{}]]>'.format(entry['description'])  # 使用 CDATA 包裹
         
