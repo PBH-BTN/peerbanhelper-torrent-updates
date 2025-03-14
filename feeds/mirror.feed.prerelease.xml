@@ -6,6 +6,7 @@
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
       <title>v7.4.4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.4</guid>
       <description>&lt;![CDATA[&lt;p&gt;由于主要开发者 @Ghost-chu 目前面临实习和工作的问题，因此在 25 年 6 月份之前都不会再有时间更新本项目。除非存在恶性错误，否则 v7.4.4 将是接下来的三个月内的最后一个正式版本。&lt;br /&gt;
 v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在任何重大错误。&lt;br /&gt;
 在此期间我们仍然欢迎提交新的错误修复拉取请求，但功能性更新可能会延后处理。&lt;/p&gt;
@@ -56,6 +57,7 @@ v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在
     </item>
     <item>
       <title>v7.4.3</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;[上游] 更新 Methanol 请求库以修复在部分情况下请求下载器 API 会导致 PeerBanHelper 封禁线程挂起卡住触发 WatchDog 超时检测的问题&lt;/li&gt;
@@ -71,6 +73,7 @@ v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在
     </item>
     <item>
       <title>v7.4.2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.2</guid>
       <description>&lt;![CDATA[&lt;p&gt;7.4.1/2 是 7.4.0 系列的一个补丁，有关 7.4.0 的功能性更新日志，请见：&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0"&gt;v7.4.0发行日志&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[!NOTE]&lt;br /&gt;
@@ -99,6 +102,7 @@ BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本
     </item>
     <item>
       <title>v7.4.0</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0</guid>
       <description>&lt;![CDATA[&lt;h2&gt;新增功能&lt;/h2&gt;
 &lt;h3&gt;新的发行平台&lt;/h3&gt;
 &lt;p&gt;新增对不受支持的平台 &lt;code&gt;Linux x86 (32-bit)&lt;/code&gt; 和 &lt;code&gt;Linux arm32-vfp-hflt&lt;/code&gt; (树莓派系列) 的 install4j 打包安装程序。&lt;br /&gt;
@@ -172,6 +176,7 @@ BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本
     </item>
     <item>
       <title>v7.4.0-Beta2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta2</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
 &lt;p&gt;[!WARNING]&lt;br /&gt;
 此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
@@ -188,6 +193,7 @@ BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本
     </item>
     <item>
       <title>v7.4.0-Beta1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta1</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
 &lt;p&gt;[!WARNING]&lt;br /&gt;
 此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
