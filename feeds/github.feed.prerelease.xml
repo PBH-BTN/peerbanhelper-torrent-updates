@@ -5,6 +5,50 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v7.4.5-beta2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.5-beta2</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相对于 7.4.5-beta1 做出的更改：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;适配 Docker 镜像的 Java 运行环境到 Java 24&lt;/li&gt;
+&lt;li&gt;适配 Portable 绿色包的 Java 运行环境到 Java 24&lt;/li&gt;
+&lt;li&gt;适配上述两者的启动参数到 Java 24&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;相对于 7.4.4 做出的更改：&lt;/p&gt;
+&lt;h2&gt;运行环境&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;更新到 &lt;a href="https://www.oracle.com/cn/news/announcement/oracle-releases-java-24-2025-03-18/"&gt;Java 24&lt;/a&gt; 版本运行环境&lt;br /&gt;
+  1.1 GUI 崩溃问题 #1014 - 1 在此版本上应当得到缓解，但暂未被确认&lt;br /&gt;
+  1.2 PeerBanHelper 在使用 HTTP/2 协议（包括 SSL）连接下载器时遇到的“数据帧重置”异常错误升级后应当得到缓解&lt;br /&gt;
+  1.3 基于虚拟线程技术的下载器并发请求和规则并发检查性能在升级后应当通过 &lt;a href="https://openjdk.org/jeps/491"&gt;JEP-491&lt;/a&gt; 得到改善&lt;br /&gt;
+  1.4 对 LowRAM 低内存模式启用 &lt;a href="https://openjdk.org/jeps/450"&gt;JEP-450&lt;/a&gt; (实验性) 紧凑对象标头 以进一步压缩内存使用。后续如果测试稳定，也将会同步到其它启动模式中。要在非 LowRAM 模式下测试 JEP-450 功能，请打开 PeerBanHelper 安装目录，找到 &amp;lt;启动器名称&amp;gt;.vmoptions 文件（如：&lt;code&gt;PeerBanHelper-GUI.vmoptions&lt;/code&gt;），插入两行新参数：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;-XX:+UnlockExperimentalVMOptions
+-XX:+UseCompactObjectHeaders
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复多国语言翻译有时并不工作的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;切换到完整版本 sqlite-jdbc 以修复极客用户在 Android 设备上的 Termux 设备中遇到的 .so 库加载崩溃问题&lt;br /&gt;
+ 2.1 由于缺少测试设备，我们也欢迎用户报告 PeerBanHelper 在 Android 15 的 “Linux 终端” 功能中的运行情况&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;注记&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;目前，我们暂时没有计划推出官方的 Android 移植版本&lt;/li&gt;
+&lt;li&gt;目前，我们暂时没有计划使用 &lt;a href="https://openjdk.org/jeps/483"&gt;JEP-483&lt;/a&gt; 优化启动速度或 &lt;a href="https://openjdk.org/jeps/493"&gt;JEP-493&lt;/a&gt; 优化运行时文件大小，但不排除在未来引入此功能的可能性&lt;/li&gt;
+&lt;li&gt;由于 Java 官方计划通过 &lt;a href="https://openjdk.org/jeps/501"&gt;JEP 501&lt;/a&gt; 删除 32 位运行时接口，未来版本 PeerBanHelper 可能不再包括对 32 位操作系统和处理器架构的支持&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker 镜像&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:sha-3fd0fd7&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速：测试版本不提供国内加速源&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sun, 23 Mar 2025 18:05:56 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.5-beta2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.5-beta2/peerbanhelper.torrent" length="113987" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.4</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.4</guid>
       <description>&lt;![CDATA[&lt;p&gt;由于主要开发者 @Ghost-chu 目前面临实习和工作的问题，因此在 25 年 6 月份之前都不会再有时间更新本项目。除非存在恶性错误，否则 v7.4.4 将是接下来的三个月内的最后一个正式版本。&lt;br /&gt;
