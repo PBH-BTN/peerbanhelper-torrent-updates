@@ -14,7 +14,7 @@
 &lt;li&gt;PeerID 过滤器（几乎不可用） - Transmission 的客户端名称接口行为不稳定 https://github.com/transmission/transmission/pull/7514&lt;/li&gt;
 &lt;li&gt;ClientName 过滤器（有时不好用） - Transmission 的客户端名称接口行为不稳定 https://github.com/transmission/transmission/pull/7514&lt;/li&gt;
 &lt;li&gt;进度作弊检查（部分不可用） - Transmission 无法提供 Peer 的累计传输量信息 https://github.com/transmission/transmission/pull/7172&lt;/li&gt;
-&lt;li&gt;进度差异检测可用&lt;/li&gt;
+&lt;li&gt;进度差异检测不可用&lt;/li&gt;
 &lt;li&gt;进度回退检测可用&lt;/li&gt;
 &lt;li&gt;禁止过量下载不可用，需要累计传输量信息&lt;/li&gt;
 &lt;li&gt;快速 PCB 测试可用&lt;/li&gt;
