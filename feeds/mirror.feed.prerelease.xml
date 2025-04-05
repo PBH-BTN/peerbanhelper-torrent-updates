@@ -5,6 +5,52 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v7.4.6</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.6</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;新增功能&lt;/h2&gt;
+&lt;p&gt;(BETA) 重新添加 Transmission 兼容支持，最低版本要求为 4.1.0-beta2（注：不支持任何低于此版本的过往版本 Transmission，没有例外） @Ghost-chu &lt;/p&gt;
+&lt;p&gt;注意：由于 API 缺失，部分功能可能完全不工作或者无法可靠工作，以下是不稳定或不可用的功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PeerID 过滤器（几乎不可用） - Transmission 的客户端名称接口行为不稳定 https://github.com/transmission/transmission/pull/7514&lt;/li&gt;
+&lt;li&gt;ClientName 过滤器（有时不好用） - Transmission 的客户端名称接口行为不稳定 https://github.com/transmission/transmission/pull/7514&lt;/li&gt;
+&lt;li&gt;进度作弊检查（部分不可用） - Transmission 无法提供 Peer 的累计传输量信息 https://github.com/transmission/transmission/pull/7172&lt;/li&gt;
+&lt;li&gt;进度差异检测可用&lt;/li&gt;
+&lt;li&gt;进度回退检测可用&lt;/li&gt;
+&lt;li&gt;禁止过量下载不可用，需要累计传输量信息&lt;/li&gt;
+&lt;li&gt;快速 PCB 测试可用&lt;/li&gt;
+&lt;li&gt;脚本引擎 - 因 API 缺失，部分脚本可能不能工作&lt;/li&gt;
+&lt;li&gt;主动检测（流量告警不可用） - Transmission 没有全局流量统计&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;一旦这些更改被正式合并到 Transmission，我们会再次更新 PeerBanHelper 以适应这些更改并将这些功能带回。&lt;br /&gt;
+我们也会持续跟进 Transmission 的版本更新。&lt;/p&gt;
+&lt;p&gt;这些功能已经测试并且稳定可用：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IP 过滤器（包括手动 IP 屏蔽、ASN/GeoIP 屏蔽、IP 订阅规则、BTN IP 规则）&lt;/li&gt;
+&lt;li&gt;连锁封禁&lt;/li&gt;
+&lt;li&gt;多拨封禁&lt;/li&gt;
+&lt;li&gt;DNS 反向解析封禁&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复在某些情况下，对于国家/地区的文本处理不正确的情况 @Ghost-chu @Gaojianli &lt;/li&gt;
+&lt;li&gt;修复 DEB 包无法开箱即用 @Anuskuss @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;已知问题&lt;/h2&gt;
+&lt;p&gt;这些问题我们已经知道，但尚未在当前版本中得到修复。我们会在未来的更新中继续关注它们：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;当 PeerBanHelper 重启时，浏览器中如仍有未关闭的 WebUI 页面，则可能导致触发暴力破解防护导致 IP 被暂时封禁&lt;/li&gt;
+&lt;li&gt;部分日志的行为未完全跟随参数改变&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.6&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.6&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 05 Apr 2025 14:46:16 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.6</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.6/peerbanhelper.torrent" length="113588" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.5</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.5</guid>
       <description>&lt;![CDATA[&lt;h2&gt;运行环境&lt;/h2&gt;
