@@ -5,6 +5,54 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v7.4.8</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.8</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;h3&gt;SWT UI 图形用户界面&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.eclipse.org/swt/"&gt;SWT&lt;/a&gt; UI 是使用平台原生方式绘制 UI 的图形用户界面。&lt;br /&gt;
+通过新的 SWT UI 我们还一同修复了在 Windows 平台上当屏幕分辨率、DPI 发生改变、用户通过远程桌面连接（RDP）切换会话以及 GPU 驱动程序崩溃时，awt.dll 导致的闪退崩溃问题。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果你使用 Windows/Windows Server 系统搭配远程桌面连接（RDP）长时间运行 PeerBanHelper 的话，我们强烈建议您使用 SWT UI 以避免 awt.dll 导致的闪退崩溃问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;相比 Swing UI 它更稳定，开销更少，但仅支持下列系统和处理器架构：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows x86_64&lt;/li&gt;
+&lt;li&gt;Linux x86_64&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;SWT UI&lt;/th&gt;
+&lt;th&gt;Swing UI&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;img width="639" alt="swt" src="https://github.com/user-attachments/assets/0d6170de-2323-43a1-bbfb-663ed3a7c909" /&gt;&lt;/td&gt;
+&lt;td&gt;&lt;img width="691" alt="swing" src="https://github.com/user-attachments/assets/8527d43c-c841-4eee-aa37-23bf87318ad6" /&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;SWT UI 的 WebUI 标签卡中的浏览器组件会根据平台自动选择 WebView，如在 Windows 上，首选使用 Microsoft Edge WebView2 （或者 Internet Explorer，如果 Edge WebView2 不可用）。&lt;br /&gt;
+若您长期使用 SWT UI 且没有切换回 Swing UI 的计划，可删除 data/jcef 中的 Swing UI 浏览器文件。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;语言添加繁体中文选项 @1476523 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复当 PeerBanHelper 升级或重启时，如果没有关闭浏览器中的 WebUI 页面，则重启完成后 IP 会被立刻封禁，并提示 “登录错误次数过多，此 IP 地址已被暂时封禁”&lt;/li&gt;
+&lt;li&gt;修复当桌面会话的分辨率、DPI 发生改变时（特别是远程桌面 RDP 环境），awt.dll 非法内存访问导致 JVM 崩溃的问题（通过 SWT UI 修复）&lt;/li&gt;
+&lt;li&gt;回退到 Java 23 版本，修复在部分嵌入式设备上 Docker 容器无法启动的问题&lt;/li&gt;
+&lt;li&gt;回退到 Java 23 版本，修复 install4j -q 参数无法静默安装的问题&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.8&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.8&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Thu, 10 Apr 2025 17:19:58 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.8</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.8/peerbanhelper.torrent" length="120608" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.7</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.7</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
