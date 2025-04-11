@@ -12,11 +12,7 @@
 &lt;p&gt;&lt;a href="https://www.eclipse.org/swt/"&gt;SWT&lt;/a&gt; UI 是使用平台原生方式绘制 UI 的图形用户界面。&lt;br /&gt;
 通过新的 SWT UI 我们还一同修复了在 Windows 平台上当屏幕分辨率、DPI 发生改变、用户通过远程桌面连接（RDP）切换会话以及 GPU 驱动程序崩溃时，awt.dll 导致的闪退崩溃问题。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;如果你使用 Windows/Windows Server 系统搭配远程桌面连接（RDP）长时间运行 PeerBanHelper 的话，我们强烈建议您使用 SWT UI 以避免 awt.dll 导致的闪退崩溃问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;相比 Swing UI 它更稳定，开销更少，但仅支持下列系统和处理器架构：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Windows x86_64&lt;/li&gt;
-&lt;li&gt;Linux x86_64&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;相比 Swing UI 它更稳定，开销更少，但“暂时”仅支持 Windows x86_64 架构。&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
