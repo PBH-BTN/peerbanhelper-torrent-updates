@@ -5,6 +5,30 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v7.4.12</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.12</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复 SPK 安装包在新版 DSM 的 Container Manager 上无法安装，容器状态无法正常获取的问题 @tbc0309 (首次贡献)&lt;/li&gt;
+&lt;li&gt;修复存在已久的 HTTP Client 内存泄漏问题，在长时间运行、添加多个下载器、高检查频率的情况下可能导致 PeerBanHelper 的 RAM 使用维持在一个异常的高水平 mizosoft/methanol#121 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复存在已久的流量统计不准确的问题。当用户超过一天未运行 PeerBanHelper 后，再次开启新的一天时，当天流量被错误地记录为当前下载器的传输量总和。现已通过重写算法修复，这应该也一同修复了因错误统计导致 “流量告警” 功能无法可靠运行的问题 @Ghost-chu &lt;br /&gt;
+  3.1 当更新到此版本时，过往的流量数据将被清除，因为过往的错误数据结构设计使得可靠和准确地升级历史数据变的不可能&lt;/li&gt;
+&lt;li&gt;修复重载配置文件时，可能导致封禁列表中的封禁地址丢失 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;删除的功能&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;“使用已知数据填充流量统计缺失的数据” 实验室测试功能已下线，因为新的算法修复了统计数据的异常问题，该实验已完成了其历史使命 @Ghost-chu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.12&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.12&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sun, 13 Apr 2025 18:52:17 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.12</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.12/peerbanhelper.torrent" length="117071" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v7.4.10</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.10</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
