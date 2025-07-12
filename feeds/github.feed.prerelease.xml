@@ -5,6 +5,40 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v8.0.4-beta1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4-beta1</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+这是一个实验性更新，由于存在潜在问题，封禁性能可能不稳定，请注意监控 PBH 的运行状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;内部更改&lt;/h2&gt;
+&lt;p&gt;为解决 #1213 #1161 #988 #763 #418 #1014 问题中困扰已久的 awt.dll 花式崩溃报错问题，我们：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 JRE 从 Liberca 切换到了 Jetbrains Runtime 以获取 &lt;a href="https://youtrack.jetbrains.com/issue/JBR-7683"&gt;JBR-7683&lt;/a&gt; 中提到的 https://github.com/JetBrains/JetBrainsRuntime/commit/66df2aae49731df772a3abce938d7f0fc2a64d1e 补丁&lt;/li&gt;
+&lt;li&gt;从 Java 24 降级到 Java 21 （因为 JBR 不支持较新的 Java 版本）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更新后，PeerBanHelper 在 Windows 操作系统上的稳定性应当得到显著改善。&lt;/p&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;为主窗口右上角添加警报数量小按钮，显示未读警告数量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;删除&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;删除 SWT UI，其历史使命已完成&lt;/li&gt;
+&lt;li&gt;删除 QT UI 的残留代码&lt;/li&gt;
+&lt;li&gt;RISC-V 和 ppcle64 架构处理器支持，因为 JetBrains Runtime 无对应架构支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;已知问题&lt;/h2&gt;
+&lt;p&gt;该大版本的 Java 运行时在长时间运行后，HTTP 客户端可能报告 selector manager closed 的错误，并停止工作。我们进行了短时间验证暂未复现该问题，但仍需留意该问题仍存在的可能。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;此实验性更新仅针对 Win32 平台发布，暂不提供 Docker 容器。&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 12 Jul 2025 12:31:32 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4-beta1</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.4-beta1/peerbanhelper.torrent" length="83866" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.3</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.3</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
