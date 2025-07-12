@@ -5,6 +5,22 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v8.0.4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;新用户安装后在 OOBE 阶段创建的首个下载器出现报错，并且无法保存到磁盘，出现问题的下载器在重启后丢失&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.4&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.4&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 12 Jul 2025 18:15:07 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.4/peerbanhelper.torrent" length="103348" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.4-beta1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4-beta1</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
