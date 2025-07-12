@@ -5,6 +5,31 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v8.0.5-beta1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5-beta1</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+这是一个实验性更新，由于存在潜在问题，封禁性能可能不稳定，请注意监控 PBH 的运行状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;内部更改&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;移除 Methanol 库，全面更换为 okhttp 库以避免潜在的 selector manager closed 错误，并对后续域前置请求做技术准备&lt;/li&gt;
+&lt;li&gt;HTTP 版本现在自动检测，忽略前台指定的 HTTP 版本字段。现在支持 HTTP 1.0, 1.1, 2, 3&lt;/li&gt;
+&lt;li&gt;现在支持连接合并重用，并发 HTTP 请求可降低下载器处理大量并发连接的压力&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;本版本也包含 v8.0.4-beta1 所提到的 awt.dll 相关修复。&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:sha-ea5d489&lt;/code&gt;  &lt;br /&gt;
+测试版本不提供国内镜像源加速。&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 12 Jul 2025 18:49:09 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5-beta1</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.5-beta1/peerbanhelper.torrent" length="103367" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.4</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
