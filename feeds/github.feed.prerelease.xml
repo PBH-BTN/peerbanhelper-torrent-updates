@@ -5,6 +5,26 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v8.0.10</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.10</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;IPDB 下载失败时没有显示错误原因 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复版本升级时提示的 Unable to upgrade database schema 错误 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复添加下载器时 statusMessage 默认为空导致 NullPointerException 的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复配置文件重载时 proxyBypasses 可能出现内存泄露的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;点击 WebUI 的徽标时现在将在新标签页打开项目主页 @Gaojianli &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.10&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.10&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Tue, 29 Jul 2025 07:07:41 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.10</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.10/peerbanhelper.torrent" length="87250" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.9</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.9</guid>
       <description>&lt;![CDATA[&lt;h2&gt;更改&lt;/h2&gt;
