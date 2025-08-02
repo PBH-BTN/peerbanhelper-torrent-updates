@@ -5,6 +5,26 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v8.0.11</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.11</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复标题 PeerBanHelper 徽标光标 (cursor) 错误 #1233 @Gaojianli &lt;/li&gt;
+&lt;li&gt;修复统计数据图表在切换过滤器后和获取的数据范围和默认行为不一致的问题 #1130 @copilot @Gaojianli @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复种子搜索页面搜索结果少于当前选中页时返回空结果且没有回到第一页的问题 #1209 @copilot @Gaojianli @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 PeerID、客户端名称、忽略地址中点击 + 按钮时，没有正确将当前页面跳转到新插入输入框的页面的问题 #1018 @copilot @Gaojianli @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复无法连接到 Deluge 下载器的问题 #1298 @copilot @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.11&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.11&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 02 Aug 2025 05:08:19 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.11</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.11/peerbanhelper.torrent" length="87250" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.10</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.10</guid>
       <description>&lt;![CDATA[&lt;h2&gt;修复&lt;/h2&gt;
