@@ -5,6 +5,29 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v8.0.12</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.12</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复封禁名单页面无法搜索 ipv6 地址的问题 #1178 #1310 @TioaChan &lt;/li&gt;
+&lt;li&gt;修复 awt 托盘图标造成的崩溃 #1296 @paulzzh @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复日流量超限告警统计错误造成无法触发告警的问题 #1325 @paulzzh &lt;/li&gt;
+&lt;li&gt;修复推送消息网络请求无法正常发送的问题 @paulzzh @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;更新 Jetbrains Runtime&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.12&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.12&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Mon, 11 Aug 2025 19:54:50 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.12</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.12/peerbanhelper.torrent" length="87290" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v8.0.11</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.11</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
