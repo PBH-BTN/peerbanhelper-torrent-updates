@@ -5,6 +5,30 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v9.0.0-beta2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.0-beta2</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;早期测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;相对 v9.0.0-alpha2 的更改&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;PortMapper 现在会在网络接口发生变动时（如 Wi-Fi 断开/连接、以太网断开/连接、PPPoE 拨号、DHCP 租期续约导致 IP 变化等），自动重新扫描可用 UPnP-IGD 设备，以便响应网络环境的更改，避免 AutoSTUN 工作异常 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;现在 AutoSTUN 主要消息文本已支持 I18N @Ghost-chu &lt;/li&gt;
+&lt;li&gt;新增多个 API 事件，允许插件响应生命周期变化和关键事件 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;更改 install4j 配置，针对 Java 25 LTS 版本添加新的额外 JVM 参数以充分利用新版本 JDK 的特性 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;更新依赖库，修复 CVE-2025-41249 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker 镜像&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:sha-3bf581f&lt;/code&gt;&lt;br /&gt;
+国内镜像加速: 测试版不提供&lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 17 Sep 2025 09:25:03 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.0-beta2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.0-beta2/peerbanhelper.torrent" length="126127" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.0.0-alpha2</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.0-alpha2</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
