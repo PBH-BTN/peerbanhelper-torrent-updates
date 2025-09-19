@@ -107,6 +107,11 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
 &lt;li&gt;现在只信任来自本地回环和局域网的 XFF 头，以避免 Fail2ban 绕过 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;Fail2ban 现在对 IPV6 地址实施封禁时，封禁 /50 而非 /60 @Ghost-chu &lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2&gt;已知问题&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;本地许可证在本次更新后失效，正在修复&lt;/li&gt;
+&lt;li&gt;IPDB 可能更新失败，正在修复&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;Docker&lt;/h2&gt;
 &lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.0&lt;/code&gt;&lt;br /&gt;
 阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.0&lt;/code&gt;&lt;/p&gt;
