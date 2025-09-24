@@ -5,6 +5,28 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.0.2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.2</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;修复 qBittorrent &amp;lt;= 5.1.2 版本中，当活动种子数量恰好为 100 的倍数时，因 https://github.com/qbittorrent/qBittorrent/issues/22158 错误导致 PeerBanHelper 陷入死循环并导致内存泄漏的问题 @paulzzh &lt;/li&gt;
+&lt;li&gt;修复 PeerFlag 的两个字段解析问题 @paulzzh &lt;/li&gt;
+&lt;li&gt;修复 Avaitor Script Editor 加载失败的问题 @Gaojianli &lt;/li&gt;
+&lt;li&gt;修复了 renew 许可时可能出现 PoW 挑战失败的问题。由于浏览器安全上下文限制，请通过 localhost 访问或者添加 HTTPS 代理 @Gaojianli &lt;/li&gt;
+&lt;li&gt;修复 STUN 服务器集中一个服务器返回非预期响应时会导致整个 NAT 探测中断失败 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 WebUI 的 Internet 访问字段固定为 Unknown 的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 WebUI 的日志在一段时间后停止工作的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.2&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.2&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 24 Sep 2025 06:47:44 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.2/peerbanhelper.torrent" length="125228" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.0.1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.1</guid>
       <description>&lt;![CDATA[&lt;p&gt;v9.0.1 是 v9.0.0 的首日补丁，用以修复影响用户体验的高优先级问题：&lt;/p&gt;
