@@ -5,6 +5,33 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.0.5</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.5</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;用户体验改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;现在 WatchDog 能够区分封禁线程卡住时是否位于下载器通信部分。如果在与下载器通信的部分，则显示故障排除引导信息；反之保持现状&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;删除的功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;删除 “IP 地址反向解析域名” 模块&lt;/li&gt;
+&lt;li&gt;该模块在过去一段时间内带来了大量不必要的支持工作量。同时，没有任何已知的恶意 IP 地址样本可被此模块检测到，因此不再继续保留此模块&lt;/li&gt;
+&lt;li&gt;删除默认规则 “tor-exit-node”&lt;/li&gt;
+&lt;li&gt;由于此规则默认更新服务器无法被用户直接访问，同时，没有任何已知的恶意 IP 地址样本被此规则捕获过，故不再继续保留&lt;/li&gt;
+&lt;li&gt;此更改仅对新用户生效&lt;/li&gt;
+&lt;li&gt;移除 “DNSJava” 实验&lt;/li&gt;
+&lt;li&gt;DNSJava 实验现已转正，成为 PeerBanHelper 主程序的一部分。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.5&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.5&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;你知道吗：我们最近上线了测试版的国内文档镜像站，用于改善中国大陆用户的文档浏览体验，你可以&lt;a href="https://pbh-docs.ghostchu.com"&gt;点此&lt;/a&gt;访问镜像站点。新的镜像站点由 EdgeOne Pages 驱动。测试期间，站点可能随时发生更改或者关闭。&lt;/em&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Mon, 29 Sep 2025 12:02:41 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.5</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.5/peerbanhelper.torrent" length="125248" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.0.4</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.4</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
