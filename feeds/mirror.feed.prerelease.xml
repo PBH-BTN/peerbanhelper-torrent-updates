@@ -5,6 +5,31 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.0.7</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.7</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 BiglyBT 下载器驱动程序没有添加 &lt;code&gt;LIVE_UPDATE_BT_PROTOCOL_PORT&lt;/code&gt; 标志，导致 AutoSTUN 程序跳过所有 BiglyBT 隧道 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复实验室模块默认配置文件没有放置 &lt;code&gt;enabled&lt;/code&gt; 配置键导致回落默认禁用状态的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;本次更新后，实验室功能将自动启用&lt;/li&gt;
+&lt;li&gt;IPDB 数据库下载超时时间延长到最多 3 分钟 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;实验室&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;IPDB 异步下载实验现在对所有用户默认启用 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复了 &lt;code&gt;TRANSACTION_BATCH_BAN_HISTORY_WRITE&lt;/code&gt; 实验和 &lt;code&gt;WIN32_EMPTY_WORKING_SET&lt;/code&gt; 由于边界索引错误，导致实际灰度范围比预期小 50% 的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.7&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.7&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;你知道吗：我们最近上线了测试版的国内文档镜像站，用于改善中国大陆用户的文档浏览体验，你可以&lt;a href="https://pbh-docs.ghostchu.com"&gt;点此&lt;/a&gt;访问镜像站点。新的镜像站点由 EdgeOne Pages 驱动。测试期间，站点可能随时发生更改或者关闭。&lt;/em&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Thu, 02 Oct 2025 14:30:54 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.7</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.7/peerbanhelper.torrent" length="125248" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.0.5</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.5</guid>
       <description>&lt;![CDATA[&lt;h2&gt;用户体验改进&lt;/h2&gt;
