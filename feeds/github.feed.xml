@@ -5,6 +5,28 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.0.10</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.10</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 MacOS 平台上 GUI 程序卡死的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;在位于 Proxmox 的 KVM 虚拟机中进行的测试，实际修复效果请以实机测试为准&lt;/li&gt;
+&lt;li&gt;修复 WebUI 视觉错误 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;其他事宜&lt;/h2&gt;
+&lt;p&gt;针对近期更新的 &lt;a href="https://tixati.com/specs/bittorrent/v3"&gt;BitTorrent Protocol Version 3&lt;/a&gt; 和 &lt;a href="https://tixati.com/specs/bittorrent/v3.1"&gt;BitTorrent Protocol Version 3.1&lt;/a&gt;，即第三版 BT 协议，PeerBanHelper 和 BTN 服务端程序应该能在下载器更新其支持后，无缝兼容相关更改。因为我们并不收集实际的 info_hash，而是基于 info_hash 的二次匿名加盐哈希值。&lt;/p&gt;
+&lt;p&gt;请注意上面的新增协议由 Tixati 提起，但尚未成为标准或事实标准。相关兼容性信息仅供参考。&lt;br /&gt;
+有关其在更广泛范围内的讨论，请参见：https://github.com/arvidn/libtorrent/issues/8047 和 https://github.com/qbittorrent/qBittorrent/issues/23421&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.10&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.10&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sun, 26 Oct 2025 19:44:58 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.10</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.10/peerbanhelper.torrent" length="124891" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.0.9</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.9</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
