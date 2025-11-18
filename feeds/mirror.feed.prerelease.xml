@@ -5,6 +5,30 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.1.0-alpha4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha4</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;早期测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+自此版本开始，PeerBanHelper 将使用 Java 25 版本，使用 NoJava 和 Portable 的用户请注意升级 Java 运行时。使用 Docker 和 Install4j-WithJava 安装包的用户，运行时将自动升级。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;修复 alpha 测试版中新增统计数据功能的累加逻辑错误的问题。&lt;br /&gt;
+修复 alpha 测试版中部分发行方式启动时报告输入 --enable-native-access 的警告。&lt;br /&gt;
+优化 SQLite 性能。&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.1.0-alpha4&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/PBH-BTN/PeerBanHelper/compare/v9.0.1...v9.1.0-alpha3&lt;/p&gt;]]&gt;</description>
+      <pubDate>Tue, 18 Nov 2025 12:02:29 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha4</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-alpha4/peerbanhelper.torrent" length="139610" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.1.0-alpha3</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha3</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -18,7 +42,7 @@
 &lt;p&gt;修复 alpha1 中的版本号解析错误。&lt;br /&gt;
 修复 alpha1 中的 Docker 容器可能报告 JAVA_HOME 路径错误的问题。&lt;/p&gt;
 &lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.1.0-alpha3&lt;/code&gt;&lt;br /&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.1.0-alpha3&lt;/code&gt;&lt;br /&gt;
 阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
@@ -2129,23 +2153,6 @@ BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本
       <pubDate>Thu, 30 Jan 2025 09:01:04 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.0/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.0-Beta2</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta2</guid>
-      <description>&lt;![CDATA[&lt;blockquote&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;相对 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta1"&gt;v7.4.0-Beta1&lt;/a&gt; 作出的更改：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;现在 DNSJAVA 和 SQLITE_VACUUM 实验默认在所有参与实验室功能的用户上启用&lt;/li&gt;
-&lt;li&gt;IPFS 实验现在默认对所有用户禁用&lt;/li&gt;
-&lt;li&gt;修复构建脚本中的数个错误（可能仍有错误）&lt;/li&gt;
-&lt;/ol&gt;]]&gt;</description>
-      <pubDate>Wed, 29 Jan 2025 18:19:21 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0-Beta2</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.0-Beta2/peerbanhelper.torrent" length="130747" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
