@@ -74,77 +74,6 @@
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-alpha3/peerbanhelper.torrent" length="139610" type="application/x-bittorrent"/>
     </item>
     <item>
-      <title>v9.1.0-alpha1</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha1</guid>
-      <description>&lt;![CDATA[&lt;blockquote&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-此版本为&lt;strong&gt;早期测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
-&lt;p&gt;[!NOTE]&lt;br /&gt;
-自此版本开始，PeerBanHelper 将使用 Java 25 版本，使用 NoJava 和 Portable 的用户请注意升级 Java 运行时。使用 Docker 和 Install4j-WithJava 安装包的用户，运行时将自动升级。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;新功能&lt;/h2&gt;
-&lt;h3&gt;仪表盘统计数据&lt;/h3&gt;
-&lt;p&gt;@Ghost-chu &lt;/p&gt;
-&lt;p&gt;新增 “近7天会话唯一IP数量” 参考值，以便用户对比不同时间段 Peer 活动会话概览。  &lt;br /&gt;
-&lt;em&gt;数据统计基于会话跟踪服务，实际值可能与参考值有所出入，数据仅供参考。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img width="1797" height="359" alt="image" src="https://github.com/user-attachments/assets/63800cf9-dcde-4896-a55e-2094d6400e50" /&gt;&lt;/p&gt;
-&lt;h3&gt;IP 统计&lt;/h3&gt;
-&lt;p&gt;@Gaojianli @Ghost-chu &lt;/p&gt;
-&lt;p&gt;图表新增 IP 统计功能，基于会话跟踪服务统计数据，生成统计时段内的 Peer 连接情况概览。以便直观计算和统计和对比不同时段内的 Peer 活动情况。&lt;br /&gt;
-&lt;em&gt;数据统计基于会话跟踪服务，实际值可能与参考值有所出入，数据仅供参考。&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img width="1813" height="800" alt="image" src="https://github.com/user-attachments/assets/b2ca03d5-6445-40b3-af74-1320c6afef9b" /&gt;&lt;/p&gt;
-&lt;h3&gt;字段排序支持&lt;/h3&gt;
-&lt;p&gt;@Gaojianli @Ghost-chu &lt;/p&gt;
-&lt;p&gt;封禁日志、访问记录、封禁记录等表格全面支持字段排序。现在你可以通过表格上的排序指示器进行多条件组合升序、降序排序。以便更加直观、直接、快速的整理数据。&lt;/p&gt;
-&lt;p&gt;&lt;img width="1830" height="107" alt="image" src="https://github.com/user-attachments/assets/b24a930a-228d-451b-9eef-a39021c5bd6a" /&gt;&lt;/p&gt;
-&lt;h3&gt;其它新功能&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;【实验性】预载适配 Transmission 未发布的 RPC API 更改，支持读取 peer_id, bytes_to_client 和 bytes_to_peer 字段，提供 Transmission 上的完整反吸血能力 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;【实验性】新增演示模式 （Demo Mode），以演示模式启动时，接口将积极拒绝所有写入和修改请求，并从响应中排除、替换敏感数据字段。@Ghost-chu&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;功能改进&lt;/h2&gt;
-&lt;h3&gt;进度反作弊&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;现在支持来自同一 IP 地址不同端口的多重连接，现在能够正确单个连接计算传输量而不是按照回退进行叠加计算，避免出现错误的累积，改善了检测误封禁率 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;现在分离存储网段和单个 IP 的流量跟踪数据，pcb 数据表现已废弃，并可能在未来删除以回收存储空间 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复进度反作弊器针对解封事件的监听器未被正确注册以重置相关跟踪项数据的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 WebUI 部分页面当重新进行查询时，没有正确跳回第一页结果的问题 @Gaojianli &lt;/li&gt;
-&lt;li&gt;修复特殊情况下表创建和表升级可能出现 SQLException 的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复传递 orderBy 参数时，默认排序优先级比用户传递排序参数优先级更高的问题 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;删除的功能&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;PTRBlacklist （DNS 反向解析封禁）模块已在此版本中完全删除，因为其性能非常糟糕，且完全没有任何实质性作用 @Ghost-chu @Gaojianli &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;其他更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;改进了 Win32 平台工作集裁剪条件，并改善了 GC 后一段时间内的进程计算性能 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;调整汇总设置首选项有关 Peers 跟踪的选项到统一的模块下 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;允许使用 ExternalSwitch 关闭自动修改 qBittorrent 设置的逻辑 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;Github API 检查更新时的 429 错误现在打印到控制台 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;改进了部分 WebAPI 的性能 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;项目从 Maven 迁移到 Gradle 以便改善构建灵活性和构建性能 @Gaojianli&lt;/li&gt;
-&lt;li&gt;Github 工作流和 Docker 构建改进 @Gaojianli &lt;/li&gt;
-&lt;li&gt;预载 Client Analyse 统计服务、图表接口 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;调整部分数据表的索引 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;重构 Active Monitoring Module，拆分统计功能到单独模块，以更好的解耦合并降低维护难度 @Ghost-chu&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.1.0-alpha1&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/PBH-BTN/PeerBanHelper/compare/v9.0.1...v9.1.0-alpha1&lt;/p&gt;]]&gt;</description>
-      <pubDate>Tue, 18 Nov 2025 10:18:00 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha1</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-alpha1/peerbanhelper.torrent" length="139610" type="application/x-bittorrent"/>
-    </item>
-    <item>
       <title>v9.0.10</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.10</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
@@ -2101,6 +2030,80 @@ BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本
       <pubDate>Sat, 01 Feb 2025 17:35:03 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.2</link>
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.2/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
+    </item>
+    <item>
+      <title>v7.4.0</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;新增功能&lt;/h2&gt;
+&lt;h3&gt;新的发行平台&lt;/h3&gt;
+&lt;p&gt;新增对不受支持的平台 &lt;code&gt;Linux x86 (32-bit)&lt;/code&gt; 和 &lt;code&gt;Linux arm32-vfp-hflt&lt;/code&gt; (树莓派系列) 的 install4j 打包安装程序。&lt;br /&gt;
+由于上游 OpenJDK 提供商已不再提供 Windows x86 的构建，32 位 Windows 不再本次更新的范围内。&lt;/p&gt;
+&lt;p&gt;在不受支持的平台上运行时，窗口标题将显示 &lt;code&gt;⚠不受支持的平台&lt;/code&gt;，且在首次运行时会收到一次性的警报信息和通知中心信息。&lt;br /&gt;
+此决定的初衷是减少报废边缘的电子垃圾（以及添加对树莓派的支持），并不代表我们对 32 位硬软件的兼容态度的转变，更不会尝试兼容 Java 8。&lt;/p&gt;
+&lt;h3&gt;(实验性) 低内存模式&lt;/h3&gt;
+&lt;p&gt;新增 “低内存模式” 启动方式，特点如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;最多使用 168MB 的堆内存（标准模式为 512MB）&lt;/li&gt;
+&lt;li&gt;禁用 GUI 和 CEF 功能&lt;/li&gt;
+&lt;li&gt;大幅减小内存缓存，加速缓存逐出&lt;/li&gt;
+&lt;li&gt;适用于轻量用户，例如运行在树莓派上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;计算机的世界鱼和熊掌不可兼得，低内存模式也有如下缺点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CPU 消耗会明显提升&lt;/li&gt;
+&lt;li&gt;磁盘 I/O 明显变得更加频繁，且 I/O 任务更重，对于闪存芯片可能加快磨损速度&lt;/li&gt;
+&lt;li&gt;PeerBanHelper 性能可能降低，且可能变得不稳定&lt;/li&gt;
+&lt;li&gt;不适合多个下载器或者大量活动做种任务、Peers 的用户&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果发现问题，欢迎在 Issue Tracker 中反馈。&lt;/p&gt;
+&lt;h3&gt;(实验性) 封禁日志事务写入&lt;/h3&gt;
+&lt;p&gt;实验室新增实验 “启用事务批量写入封禁历史记录”，启用后原本分为多步的写入过程将被合并为一个事务。在大量和频繁的封禁场景下可有效降低随机磁盘 I/O。&lt;/p&gt;
+&lt;p&gt;如果发现问题，欢迎在 Issue Tracker 中反馈。&lt;/p&gt;
+&lt;h3&gt;开关参数&lt;/h3&gt;
+&lt;p&gt;引入全新开关参数系统，可以通过启动参数、参数文件和环境变量控制 PeerBanHelper 的内部开关。这些开关可能对打包发布者产生重要意义。具体改动请参见 &lt;code&gt;PACKAGING.md&lt;/code&gt; 描述文件。&lt;/p&gt;
+&lt;h3&gt;JCEF 支持&lt;/h3&gt;
+&lt;p&gt;JCEF 支持随 install4j 安装程序引入，且可在安装阶段禁用。启用 JCEF 支持后，PeerBanHelper 会根据平台动态下载安装 CEF 框架。一旦 JCEF 可用，PeerBanHelper 会在 GUI 窗口内新增一个 “WebUI 控制台” 选项卡，以供用户在不打开浏览器的情况下访问 WebUI 更改设置。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" src="https://github.com/user-attachments/assets/c36e1720-f87e-40e3-a4c0-fe552ec7b555" /&gt;&lt;/p&gt;
+&lt;p&gt;在开发、快照、测试版本的 PeerBanHelper 上会额外启用 DevTools，可通过在 WebUI 控制台页面内按 F12 打开。&lt;/p&gt;
+&lt;p&gt;可通过传入参数、开关参数和标志文件禁用。JCEF 调试参数可通过向 PeerBanHelper 直接传参输入。&lt;/p&gt;
+&lt;h3&gt;改进的 GUI 界面&lt;/h3&gt;
+&lt;p&gt;新增主题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;macOS 主题：一套更符合 macOS 设计美学的 FlatLaf 主题，在 macOS 系统上会自动启用&lt;/li&gt;
+&lt;li&gt;Insider 主题：在开发、快照、测试版本的 PeerBanHelper 上会自动启用，以便在反馈错误时根据截图快速确认使用的版本类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;新增 “关于-&amp;gt;开发人员与社区贡献者...” 菜单，以表彰对 PeerBanHelper 做出重要贡献的人们。 &lt;/p&gt;
+&lt;p&gt;新增 &lt;code&gt;---DEBUG---&lt;/code&gt; 菜单，仅在开发、快照、测试版本的 PeerBanHelper 上显示以供测试小组的测试用户对部分功能进行调试。部分功能需要管理员权限。&lt;/p&gt;
+&lt;p&gt;进行下载操作时，现在有一个新的对话框显示下载进度。&lt;/p&gt;
+&lt;p&gt;&lt;img alt="image" src="https://github.com/user-attachments/assets/977347a9-6298-422e-b673-ee3778738e9d" /&gt;&lt;/p&gt;
+&lt;h2&gt;用户体验改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当 PeerBanHelper 检测到下载器上的传入连接来自内部地址时导致封禁无法工作时（例如 NAT 配置异常），发送告警信息提醒用户下载器的网络驱动程序可能被错误的配置为了 bridge 模式。此提示信息已同步到 PBH 文档。&lt;/li&gt;
+&lt;li&gt;[WebUI] BTN 配置失败时，显示提示浮窗引导用户查看 BTN 配置文档页面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;尝试修复在查询 IP 地址详情信息的时候，部分操作耗时可能过长的问题 #889&lt;/li&gt;
+&lt;li&gt;修复封禁列表过大时，IP 地址传递没有去重的问题导致请求体过大的问题 #938&lt;/li&gt;
+&lt;li&gt;[WebUI] 修复了多个错误&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;发行更改&lt;/h2&gt;
+&lt;h3&gt;新的架构支持&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Linux x86 (32-bit)&lt;/li&gt;
+&lt;li&gt;Linux arm32-vfp-hflt (Raspberry Pi 5 之前的旧版设备)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;(实验性)发行渠道&lt;/h3&gt;
+&lt;p&gt;新增 .torrent 种子文件发行方式，当与 Github 连接质量不佳时，可通过 .torrent 文件下载 PeerBanHelper 的版本文件。  &lt;/p&gt;
+&lt;p&gt;可在此订阅 RSS Feed 更新：&lt;a href="https://github.com/PBH-BTN/peerbanhelper-torrent-updates"&gt;peerbanhelper-torrent-updates&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.0&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.0&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Thu, 30 Jan 2025 09:01:04 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.0/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
