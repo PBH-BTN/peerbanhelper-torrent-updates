@@ -5,6 +5,33 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.1.0-beta2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta2</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+自此版本开始，PeerBanHelper 将使用 Java 25 版本，使用 NoJava 和 Portable 的用户请注意升级 Java 运行时。使用 Docker 和 Install4j-WithJava 安装包的用户，运行时将自动升级。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相对于 v9.1.0-beta1 的更新内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修复了进度反作弊的 “进度回退” 检查不起作用的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;改进了进度反作弊的 “进度回退” 的反应速度 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复了在解除 Peer 封禁后，进度反作弊的数据未跟随删除导致解除封禁后再次连接会被立刻封禁的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.1.0-beta2&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/PBH-BTN/PeerBanHelper/compare/v9.0.1...v9.1.0-beta2&lt;/p&gt;]]&gt;</description>
+      <pubDate>Thu, 20 Nov 2025 19:09:56 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta2</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-beta2/peerbanhelper.torrent" length="139607" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.1.0-beta1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta1</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -2089,35 +2116,6 @@ v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在
       <pubDate>Mon, 10 Feb 2025 19:12:11 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.3/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.2</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.2</guid>
-      <description>&lt;![CDATA[&lt;p&gt;7.4.1/2 是 7.4.0 系列的一个补丁，有关 7.4.0 的功能性更新日志，请见：&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.0"&gt;v7.4.0发行日志&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!NOTE]&lt;br /&gt;
-BiglyBT 用户需要注意：本版 PeerBanHelper 要求 BiglyBT 适配器版本必须为 v1.3.0 或者更高版本，在&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT/releases"&gt;这里&lt;/a&gt;下载 BiglyBT 下载器的适配器。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复 BiglyBT 下载器可能循环重复封禁，IPBlackList 等 IP 封禁模块现在等待握手确认连接有效后才会工作&lt;/li&gt;
-&lt;li&gt;修复 BiglyBT 下载器适配器封禁实施方法不合理导致产生大量半开连接的问题&lt;/li&gt;
-&lt;li&gt;修复 BiglyBT 下载器未提供 UNBAN_PEER 特性标志，导致 PeerBanHelper 的部分功能在其上不起作用的问题&lt;/li&gt;
-&lt;li&gt;修复了英语环境下，缺失 VIEW_ABOUT_CREDIT 翻译词条的问题&lt;/li&gt;
-&lt;li&gt;修复当 data/config 路径为文件时，PeerBanHelper 直接报错退出的问题，现在会首先尝试删除并重建为目录&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;性能改进&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;日志刷写现在移动到单独的平台线程&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.2&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.2&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sat, 01 Feb 2025 17:35:03 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.2</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.2/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
