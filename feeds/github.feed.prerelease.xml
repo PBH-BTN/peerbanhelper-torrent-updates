@@ -5,6 +5,60 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v9.1.0-beta4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta4</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+自此版本开始，PeerBanHelper 将使用 Java 25 版本，使用 NoJava 和 Portable 的用户请注意升级 Java 运行时。使用 Docker 和 Install4j-WithJava 安装包的用户，运行时将自动升级。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相对于 v9.1.0-beta3 的更新内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;修复流量统计图表数据不准确的问题 @Ghost-chu&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.1.0-beta4&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/PBH-BTN/PeerBanHelper/compare/v9.0.1...v9.1.0-beta4&lt;/p&gt;]]&gt;</description>
+      <pubDate>Fri, 21 Nov 2025 11:57:06 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta4</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-beta4/peerbanhelper.torrent" length="139627" type="application/x-bittorrent"/>
+    </item>
+    <item>
+      <title>v9.1.0-beta3</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta3</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+自此版本开始，PeerBanHelper 将使用 Java 25 版本，使用 NoJava 和 Portable 的用户请注意升级 Java 运行时。使用 Docker 和 Install4j-WithJava 安装包的用户，运行时将自动升级。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相对于 v9.1.0-beta2 的更新内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;~~修复流量统计图表数据不准确、计算错误、数值溢出为负数、出现 NaN undefined 的问题 @Ghost-chu~~ 仍然存在问题&lt;/li&gt;
+&lt;li&gt;修复基本信息的构建时间数据为 1970 年的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;删除 BitComet 2.18 以下版本的兼容支持，现在最低要求 BitComet 2.18 正式版版本 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;新增 BitComet 下载器的流量统计功能支持 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;WebUI 调整和优化 @Gaojianli &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.1.0-beta3&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: 测试版本不提供国内镜像加速源&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Full Changelog&lt;/strong&gt;: https://github.com/PBH-BTN/PeerBanHelper/compare/v9.0.1...v9.1.0-beta3&lt;/p&gt;]]&gt;</description>
+      <pubDate>Fri, 21 Nov 2025 11:09:45 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta3</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-beta3/peerbanhelper.torrent" length="139627" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.1.0-beta2</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-beta2</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -2049,73 +2103,6 @@ v8.0 引入了新的 [PF4J 插件加载器](https://pf4j.org/)，现在您可以
       <pubDate>Sun, 23 Mar 2025 18:05:56 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.5-beta2</link>
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.5-beta2/peerbanhelper.torrent" length="113987" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.4</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.4</guid>
-      <description>&lt;![CDATA[&lt;p&gt;由于主要开发者 @Ghost-chu 目前面临实习和工作的问题，因此在 25 年 6 月份之前都不会再有时间更新本项目。除非存在恶性错误，否则 v7.4.4 将是接下来的三个月内的最后一个正式版本。&lt;br /&gt;
-v7.4 在过去的一段时间内已经过了时间的检验，它应该不存在任何重大错误。&lt;br /&gt;
-在此期间我们仍然欢迎提交新的错误修复拉取请求，但功能性更新可能会延后处理。&lt;/p&gt;
-&lt;p&gt;BTN 网络已经测试无人值守功能了许久，因此 BTN 的相关服务应该仍然能够正常工作而不受影响。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;对于使用 GitHub 下载困难的用户，可以从 Releases 中下载 .torrent 种子文件，通过 BT 网络下载 PeerBanHelper 安装程序。&lt;br /&gt;
-您也可以订阅 &lt;a href="https://github.com/PBH-BTN/peerbanhelper-torrent-updates"&gt;RSS 源&lt;/a&gt; 以自动下载新版本的 PeerBanHelper 安装程序，并为其它用户做种以优化传递。&lt;/p&gt;
-&lt;h2&gt;新增功能&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;实验性的通知推送渠道 Bark @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;默认配置文件更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;去除默认配置文件中重复的 ULA IP CIDR 范围 @thrive7776 @Gaojianli &lt;/li&gt;
-&lt;li&gt;更新 profile.yml 中有关 IPV6 地址的规则以适应当前反吸血网络环境 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;更新配置文件的 BTN 服务器地址到新服务器地址，旧的地址将在未来停用 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修正拼写错误 @CreeperAWA &lt;/li&gt;
-&lt;li&gt;修复自动生成的 Portable 批处理文件换行符被错误替换为 LF 而不是 CRLF 的问题，这导致在 Windows 平台上 Portable 包的启动脚本出现语法错误 @Gaojianli &lt;/li&gt;
-&lt;li&gt;修复 Windows 平台下，部分系统在启动时因无法释放 EcoQosAPI 所需的动态链接库导致崩溃的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复部分用户使用 PTR Blacklist 时出现 &lt;code&gt;java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException&lt;/code&gt; 异常的问题。@Ghost-chu &lt;/li&gt;
-&lt;li&gt;[WebUI] 修复封禁列表中 IPV6 地址主机地址部分没有按标准规范使用 &lt;code&gt;[]&lt;/code&gt; 方括号对括起的问题 @Gaojianli &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;优化和更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;减少封禁检查过程中消耗的 RAM 并限制并发检查数量（默认 32），缓解大量 Peers 的情况下可能导致 PBH 耗尽堆内存卡死的问题，作为交换，循环检查性能可能略有下降 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;杂项&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;更新过期的构建脚本 @AstroProfundis @Gaojianli &lt;/li&gt;
-&lt;li&gt;更新 install4j 捆绑 Java 补丁版本 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Sparkle Tracker (Trunker) 更改&lt;/h2&gt;
-&lt;h3&gt;新增功能&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;新增 &lt;a href="https://webtorrent.io/"&gt;WebTorrents&lt;/a&gt; 支持，地址为：&lt;code&gt;wss://tracker.ghostchu-services.top/announce&lt;/code&gt; @Gaojianli &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.4&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.4&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Fri, 07 Mar 2025 17:02:27 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.4</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.4/peerbanhelper.torrent" length="130788" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.3</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;[上游] 更新 Methanol 请求库以修复在部分情况下请求下载器 API 会导致 PeerBanHelper 封禁线程挂起卡住触发 WatchDog 超时检测的问题&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.3&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.3&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Mon, 10 Feb 2025 19:12:11 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.3</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.3/peerbanhelper.torrent" length="130728" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
