@@ -5,6 +5,32 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v9.1.5</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.5</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;重要性能改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;为会话统计与分析服务、Peer Swarm 记录服务、Peer 跟踪记录服务的添加和改善内存缓存机制，以大幅减少磁盘写入量和磁盘 I/O @Ghost-chu &lt;/li&gt;
+&lt;li&gt;此更改约能减少 &amp;gt;80% 的磁盘写入和 &amp;gt;50% 的磁盘读取，强烈建议 SSD 和 EMMC/SD 卡用户和重度用户更新，以便减少长期运行时对闪存寿命的影响&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;变更&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;连接下载器时现在允许通过 &lt;code&gt;pbh.downloader.bypassproxy=false&lt;/code&gt; 参数取消强制直连，允许访问下载器 API 时通过代理服务器 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;由于一直持续有用户反馈在史前版本(v4.1.x, v3.x)的 qBittorrent 上无法使用 PeerBanHelper 的问题（特别是在更新后出现无法使用），请注意：PeerBanHelper 自 v1.0 起就要求 qBittorrent 版本必须大于等于 4.5.0。使用老旧版本 qBittorrent 一直不受支持，一旦新版本 PBH 使用了新版 QB 的 API ，则功能可能会被破坏。此版本起为  qBittorrent 下载器添加了版本检查，您需要更新到最低 4.5.0 版本的 qBittorrent。 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;演示模式下游客可以更新 IP 地址规则订阅 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.1.5&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.1.5&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Tue, 02 Dec 2025 17:23:44 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.5</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.5/peerbanhelper.torrent" length="139608" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.1.4</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.4</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
@@ -1149,23 +1175,6 @@ DockerHub: `ghostchu/peerbanhelper:v8.0.2`
       <pubDate>Sun, 13 Apr 2025 18:52:17 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.12</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.12/peerbanhelper.torrent" length="117071" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.10</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.10</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复 SWT UI 在部分用户设备上无法加载的问题&lt;/li&gt;
-&lt;li&gt;修复安装/升级程序在安装/升级时没有自动运行上一个版本的卸载程序的问题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.10&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.10&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Fri, 11 Apr 2025 17:41:41 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.10</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.10/peerbanhelper.torrent" length="117071" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
