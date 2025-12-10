@@ -5,6 +5,69 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v9.2.0</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.0</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+此版本发布后，BTN 服务器协议版本将升级到 BTN v3.0。旧版本 PeerBanHelper 将无法再连接到 BTN 服务器同步、提交和获取数据。请注意及时更新 PeerBanHelper 版本。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;h3&gt;OOBE 改进&lt;/h3&gt;
+&lt;p&gt;@Gaojianli @Ghost-chu &lt;/p&gt;
+&lt;p&gt;对开箱即用体验进行了改进，现在将引导新用户更好的配置下载器和 BTN 功能。&lt;/p&gt;
+&lt;h4&gt;自动寻找本机网络上的下载器 WebUI&lt;/h4&gt;
+&lt;p&gt;改进了下载器配置流程，以便降低新手用户的初始配置难度。现在 PeerBanHelper 能够扫描本机网络上的可用下载器 WebUI 端口，并自动识别下载器类型、主机名、端口号，并自动填充相关信息到表单中。&lt;/p&gt;
+&lt;p&gt;目前支持下列类型的下载器识别：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;qBittorrent&lt;/li&gt;
+&lt;li&gt;Transmission&lt;/li&gt;
+&lt;li&gt;BitComet&lt;/li&gt;
+&lt;li&gt;BiglyBT&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img width="1663" height="1064" alt="image" src="https://github.com/user-attachments/assets/d1c25fd9-f512-4136-b6cc-3c51839810ed" /&gt;&lt;/p&gt;
+&lt;p&gt;受技术限制，只有 PeerBanHelper 和下载器在同设备相同网络下才能识别。如下载器创建于容器中且非 host 网络驱动，则可能无法识别。&lt;br /&gt;
+使用此功能前，需要先启用下载器的 WebUI。&lt;/p&gt;
+&lt;h3&gt;BTN 网络 3.0&lt;/h3&gt;
+&lt;p&gt;@Gaojianli @Ghost-chu &lt;/p&gt;
+&lt;p&gt;本次更新包含了对 BTN 3.0 的协议支持。并新增了以下能力：&lt;/p&gt;
+&lt;h4&gt;Sync Swarm&lt;/h4&gt;
+&lt;p&gt;将 PeerBanHelper 所连接的下载器上的活动任务种群信息与 BTN 服务器同步。其它 BTN 用户可以查看指定 IP 地址上的 活动数据。&lt;/p&gt;
+&lt;p&gt;该能力将为 BTN 的过量下载，查询 IP 并发下载数、做种数、历史连接信息，总流量统计等功能提供数据支持。&lt;/p&gt;
+&lt;h4&gt;IP Query&lt;/h4&gt;
+&lt;p&gt;该能力为用户提供 IP 查询的 BTN 数据功能，支持查询 BTN 网络提供的 IP 标签、封禁计数和封禁的详细数据、种群跟踪数量及跟踪的详细数据、正在下载计数、正在做种计数、上传流量、下载流量、分享率和种子访问数量。&lt;/p&gt;
+&lt;p&gt;您可以使用此功能主动查询 IP 信息，以便检查目标 IP 是否可能是潜在的恶意 Peer。&lt;/p&gt;
+&lt;p&gt;&lt;img width="1818" height="1193" alt="image" src="https://github.com/user-attachments/assets/9454b351-cf2d-4e11-a97c-fd3614d100e2" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img width="1591" height="446" alt="image" src="https://github.com/user-attachments/assets/64ba6e1e-42bd-4044-b8b8-88e04e05634b" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img width="1790" height="862" alt="image" src="https://github.com/user-attachments/assets/1224ae06-1105-405c-a006-e9e06038274a" /&gt;&lt;/p&gt;
+&lt;p&gt;后续该功能将跟随 BTN 的持续改进而提供更多查询能力。&lt;/p&gt;
+&lt;h4&gt;IPDenyList&lt;/h4&gt;
+&lt;p&gt;接替原先的云端规则（Rules）中的 IP 部分。以一种内存使用率更低、速度更快、更加灵活的方式传递大量 IP 黑名单数据，而无需担心内存耗尽的问题。&lt;/p&gt;
+&lt;p&gt;位于该名单中的 IP 将被自动封禁。&lt;/p&gt;
+&lt;h4&gt;IPAllowList&lt;/h4&gt;
+&lt;p&gt;解析原先的例外规则中的 IP 部分，以一种内存使用率更低、速度更快、更加灵活的方式传递大量 IP 白名单数据，而无需担心内存耗尽的问题。&lt;/p&gt;
+&lt;p&gt;位于此名单中的 IP 将不会被封禁，已处于封禁状态的 IP 将会解除封禁。&lt;/p&gt;
+&lt;h4&gt;自动注册 UserApp&lt;/h4&gt;
+&lt;p&gt;新增 UserApp 自动注册功能，在 BTN 服务器侧支持的情况下，PBH 会携带自己的唯一安装 ID 向服务器发起请求。服务器将自动使用此信息关联和创建 UserApp 以便处理数据。免去新手用户注册和关键 Github 账号的繁琐流程。&lt;/p&gt;
+&lt;p&gt;如果可能的情况下，仍然推荐前往 BTN 上手动注册，以便后续更方便的管理。&lt;/p&gt;
+&lt;h2&gt;改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;现在 BTN 缓存数据将不以文件形式保存，而是存储在 PeerBanHelper 的 SQLite 数据库中 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复在 WebUI 上启停模块需要重新启动 PeerBanHelper 才会生效的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复部分模块配置调整后，有关 Scheduler 定时任务的配置需要重新启动 PeerBanHelper 才会生效的问题 @Ghost-chu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:v9.2.0&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.2.0&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; &lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 10 Dec 2025 05:11:36 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.0</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.2.0/peerbanhelper.torrent" length="139868" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.1.5</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.5</guid>
       <description>&lt;![CDATA[&lt;h2&gt;重要性能改进&lt;/h2&gt;
@@ -1130,27 +1193,6 @@ DockerHub: `ghostchu/peerbanhelper:v8.0.2`
       <pubDate>Thu, 24 Apr 2025 07:33:08 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.14</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.14/peerbanhelper.torrent" length="117071" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v7.4.13</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.13</guid>
-      <description>&lt;![CDATA[&lt;p&gt;这应该是 v7.4 系列的最后一个版本，我们后续将投入到 v8.0 的开发中。&lt;/p&gt;
-&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复在非 Windows 平台上也提示切换 SWT UI 的问题&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;改进&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;按需加载翻译文件，减少 RAM 使用&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v7.4.13&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v7.4.13&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Tue, 22 Apr 2025 14:03:00 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v7.4.13</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v7.4.13/peerbanhelper.torrent" length="117071" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
