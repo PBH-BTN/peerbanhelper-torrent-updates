@@ -5,6 +5,35 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v9.2.3</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.3</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;适配 BiglyBT 4.0.0 和 PeerBanHelper-BiglyBT-Adapter 2.0.0。使用新版本 BiglyBT 的用户请注意更新 &lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT"&gt;BiglyBT 兼容插件&lt;/a&gt; @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 GUI 通知区域右键托盘图标无法打开右键菜单的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 BTN Heartbeat 在 PBH 启用代理服务器的情况下，仅报告了代理服务器出口 IP 地址的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 BTN IP 查询模块中部分文本可能存在歧义的问题 @paulzzh @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复进行数据清理时，可能报告 SQL 查询错误 &lt;em&gt;[SQLITE_TOOBIG] String or BLOB exceeds size limit (statement too long)&lt;/em&gt; 的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复当 IP 输入框中 IP 地址变动时，BTN IP 查询模块会在不点击查询按钮的情况下更新内容的问题 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;添加 Sukka IP 查询快捷按钮 @Gaojianli &lt;/li&gt;
+&lt;li&gt;更新 WebUI 英语本地化内容 @CreeperAWA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.2.3&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.2.3&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; &lt;/p&gt;]]&gt;</description>
+      <pubDate>Mon, 22 Dec 2025 15:52:22 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.3</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.2.3/peerbanhelper.torrent" length="131468" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.2.2</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.2</guid>
       <description>&lt;![CDATA[&lt;h2&gt;优化&lt;/h2&gt;
