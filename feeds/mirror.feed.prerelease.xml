@@ -5,6 +5,38 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.2.4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.4</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新增对 BitComet v2.20 Beta2 [20260107] 新增字节级流量统计数据 API 的支持，现在支持在 BitComet v2.20 Beta2 [20260107] 或更高版本上进行流量统计 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;[实验性] 新增对 BitComet v2.20 Beta2 [20260107] 的种子列表翻页 API 的支持 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT"&gt;PBH-BiglyBT-Adapter 扩展&lt;/a&gt;已更新至 v2.0.1 版本，以添加对 BiglyBT 的 Peer Flags 解析支持，可在连接统计模块中显示 BiglyBT 上的连接标志信息 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;进一步改进对 Transmission 的实验性支持，解决当封禁列表为空时，发送给 Transmission 的响应被忽略的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[BTN 能力] 在 BTNv2 上实现曾包含在 BTNv1 的 Swarm 传输速率跟踪功能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;Portable 包新增 nojava 版本 @WordlessEcho &lt;/li&gt;
+&lt;li&gt;Portable 包支持 Java 版本检测 @WordlessEcho &lt;/li&gt;
+&lt;li&gt;在支持安全扫描的平台上，PeerBanHelper 会在加载或下载任何插件、脚本前，预先进行反病毒安全扫描以增强安全性 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;在 Windows 平台上，使用 AMSI 调用安装的反病毒软件或 Windows Defender。对于无安全保护或不支持 AMSI 的计算机，将跳过扫描步骤&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;优化改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[WebUI] 对活动种子和封禁日志界面使用响应式设计 @whuangbh @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[WebUI] 修复因浏览器安全策略更改导致 AvaitorScript 编辑器无法再从 CDN 加载的问题 @Gaojianli &lt;/li&gt;
+&lt;li&gt;[WebAPI] 修复 BTN 拒绝列表版本描述和悬浮显示信息不一致的问题 @paulzzh &lt;/li&gt;
+&lt;li&gt;[WebUI] 修复通过 WebUI 保存 AvaitorScript 脚本时，每次点击确定按钮都会额外追加 .av 文件名后缀的问题 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;]]&gt;</description>
+      <pubDate>Mon, 12 Jan 2026 05:50:55 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.4</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.2.4/peerbanhelper.torrent" length="140968" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.2.3</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.3</guid>
       <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
@@ -2021,109 +2053,6 @@ v8.0 引入了新的 [PF4J 插件加载器](https://pf4j.org/)，现在您可以
       <pubDate>Wed, 09 Jul 2025 11:32:11 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.0-beta3</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.0-beta3/peerbanhelper.torrent" length="101907" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.0-beta2</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.0-beta2</guid>
-      <description>&lt;![CDATA[&lt;blockquote&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-此测试版本涉及到不可撤销的数据库和配置文件结构的较大变更，使用测试版本前请&lt;strong&gt;务必&lt;/strong&gt;做好数据备份！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;相对 v8.0.0-beta1 的更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复了困扰已久的死锁问题&lt;/li&gt;
-&lt;li&gt;修复了 IPDB 下载失败时但服务器返回了状态码的情况下，可能不会使用其它源重试&lt;/li&gt;
-&lt;/ol&gt;
-&lt;details&gt;
-&lt;summary&gt;相对 v7.4.15 的更改&lt;/summary&gt;
-
-# v8.0.0 - 主要版本更新
-
-{{前言}}
-
-## 新功能
-
-### 1. 流量限制
-
-在 v8.0 版本中，我们新增了 “流量限制” 功能，它也叫做 “滑动窗口动态限速”。使用此功能 PeerBanHelper 必须保持稳定运行。在 Windows 设备上，建议使用 SWT UI 运行，Docker 建议设置 restart-policy 为 unless-stopped。   
-此功能启用后，PeerBanHelper 将接管下载器的限速功能。  
-使用此功能需要用户手动配置三个选项，分别为：
-
-1. 每日（24小时）最大允许上传的数据量
-3. 最小速度限制（调整时不低于此值）
-4. 最大速度限制（调整时不高于此值）
-
-启动该功能后，PeerBanHelper 将尽最大努力在*最小速度限制*和*最大速度限制*之间根据近 24 小时已下载的数据量调整您的下载器限速，以尽可能将每日的传输量控制在设置的值附近。
-
-**简单来说：** 过去一段时间传的少，则提高速度；反之过去一段时间传的多，则降低速度。最终将 24 小时传输量保持在用户设置的期望传输量附近。
-
-![image](https://github.com/user-attachments/assets/323e2fbb-384d-43d6-8c39-af27aac1b1ce)
-
-### 2. 表格排序
-
-许多用户反馈，PeerBanHelper 的表格没有排序功能，使得在自行手动排查数据的时候困难重重。  
-本次更新对主要的几个呼声较高的表格添加了数据排序功能：
-
-* 数据透视-&gt;封禁日志：允许按照封禁时间、上传流量和种子大小排序
-* 数据透视-&gt;种子-&gt;访问历史-&gt;流量
-* 数据透视-&gt;种子-&gt;封禁历史-&gt;流量
-
-![image](https://github.com/user-attachments/assets/097bca7c-2911-4619-8620-67012916ac99)
-
-### 3. 新的指标
-
-新的 *Peer 封禁率* 和 *Peer 会话跟踪数量* 指标可以统计自 PeerBanHelper 上次重启以来的连接的 Peers 与封禁的 Peers 的比例，并显示目前 PeerBanHelper 正在跟踪的 Peer 会话数量（即有多少 Peers 自上次 PBH 重启以来连接到过您的下载器并进行过数据传输）。
-
-![image](https://github.com/user-attachments/assets/623857c7-e8bd-4cff-8df0-9bb600185290)
-
-
-### 4. 插件加载器和 API
-
-v8.0 引入了新的 [PF4J 插件加载器](https://pf4j.org/)，现在您可以编写自己的 PeerBanHelper 插件以增强或修改 PeerBanHelper 的行为。  
-
-![屏幕截图_7-7-2025_12720_pf4j org](https://github.com/user-attachments/assets/ae3dab39-860d-446f-be28-721c14e29063)
-
-## 改进
-
-1. 重构 PeerBanHelper 代码结构以适配 PF4J 插件加载器，并合适的暴露各个模块的 API 接口。
-2. 引入 Swarm Tracking 技术，以便在不同检查间关联跟踪有关 Peers。该功能类似仅用于 PBH 的、更详细的本地。 Tracker，只有与下载器有数据传输的 Peer 才会被记录，所有记录的数据在 PeerBanHelper 退出时不会保留。
-3. 重写 BTN 数据提交读取逻辑，避免出现大量相同时间戳数据导致分批读取死循环的潜在问题。
-5. ⭐ **下载器现在使用唯一 UUID 标定，而不是依赖下载器名称。更改下载器名称不再影响与该下载器关联的数据统计。** 与此有关的所有 WebAPI 都进行了重构。
-6. 调整缓存功能，减少 RAM 使用量，以腾出更多宝贵的 RAM 用于其它用途。
-7. 现在新增 MonitorFeatureModule，与普通的模块抽象不同，该类允许一次性处理单次 BanWave 中的所有 Peers，提高处理效率。
-8. 新增 ORMLite 对 SQL 临时表的支持。
-9. 更新使用的 SQLite Loongarch64 构建。
-10. 预载下一代 BTN v2 协议代码。
-11. 新增 WebAPI 的查询排序参数 `&amp;orderBy`。
-12. 现在语言文件按需加载到 RAM 中，以节约不必要的 RAM 使用。
-13. HTTP 请求现在全面使用虚拟线程作为线程模型，以优化大量下载器 HTTP 请求并发过程中的性能和 RAM 使用。
-14. [install4j] Windows 平台的安装程序现在会在安装 Microsoft Edge WebView2 之前检查是否必要再安装。
-15. BanMetadata 现在额外记录结构化数据，以支撑程序化分析。
-16. PeerBanHelper 的警报系统现在与桌面通知挂钩，当使用 GUI 模式运行时，新的警报会通过系统通知中心发送。
-17. 新增 WebUI 登陆成功、登陆失败、暴力破解防护的控制台日志信息，同时登陆成功时会发送桌面通知提示用户有人已登录 WebUI 控制台。
-18. 改进了 WebUI 的暴力破解防护机制，现在不再计算单个 IP，而是 IP 段以提高保护能力并节约 RAM。
-19. ⭐ **[Windows] 在 Windows 平台上运行的 PeerBanHelper 现在支持崩溃自动恢复。当 JVM 遇到致命错误而被迫退出崩溃时，错误处理脚本将被拉起收集错误，并在稍后重新启动 PeerBanHelper。**
-20. [install4j] 重新添加 “将 PeerBanHelper 作为服务安装” 的安装方式。
-21. 异步启动 BTN 模块，加快启动速度。
-22. 改进 HTTP 请求的超时设置，现在不再单独限制 connectTimeout 和 headersTimeout，转为单个请求最多等待 30 秒。
-23. Java 运行环境升级到 Java 24
-
-## 错误修复
-
-1. 修复了 IPDB 下载失败时但服务器返回了状态码的情况下，可能不会使用其它源重试
-2. 修复了数个并发死锁问题
-
-以及其它性能和资源占用方面的改进。
-&lt;/details&gt;
-
-&lt;h2&gt;Docker 镜像&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:sha-1a7fb9c&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速：测试版本不提供国内加速源&lt;/p&gt;]]&gt;</description>
-      <pubDate>Tue, 08 Jul 2025 16:56:17 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.0-beta2</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.0-beta2/peerbanhelper.torrent" length="101907" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>

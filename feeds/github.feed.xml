@@ -5,6 +5,38 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.2.4</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.4</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新增对 BitComet v2.20 Beta2 [20260107] 新增字节级流量统计数据 API 的支持，现在支持在 BitComet v2.20 Beta2 [20260107] 或更高版本上进行流量统计 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;[实验性] 新增对 BitComet v2.20 Beta2 [20260107] 的种子列表翻页 API 的支持 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT"&gt;PBH-BiglyBT-Adapter 扩展&lt;/a&gt;已更新至 v2.0.1 版本，以添加对 BiglyBT 的 Peer Flags 解析支持，可在连接统计模块中显示 BiglyBT 上的连接标志信息 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;进一步改进对 Transmission 的实验性支持，解决当封禁列表为空时，发送给 Transmission 的响应被忽略的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[BTN 能力] 在 BTNv2 上实现曾包含在 BTNv1 的 Swarm 传输速率跟踪功能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;Portable 包新增 nojava 版本 @WordlessEcho &lt;/li&gt;
+&lt;li&gt;Portable 包支持 Java 版本检测 @WordlessEcho &lt;/li&gt;
+&lt;li&gt;在支持安全扫描的平台上，PeerBanHelper 会在加载或下载任何插件、脚本前，预先进行反病毒安全扫描以增强安全性 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;在 Windows 平台上，使用 AMSI 调用安装的反病毒软件或 Windows Defender。对于无安全保护或不支持 AMSI 的计算机，将跳过扫描步骤&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;优化改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[WebUI] 对活动种子和封禁日志界面使用响应式设计 @whuangbh @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[WebUI] 修复因浏览器安全策略更改导致 AvaitorScript 编辑器无法再从 CDN 加载的问题 @Gaojianli &lt;/li&gt;
+&lt;li&gt;[WebAPI] 修复 BTN 拒绝列表版本描述和悬浮显示信息不一致的问题 @paulzzh &lt;/li&gt;
+&lt;li&gt;[WebUI] 修复通过 WebUI 保存 AvaitorScript 脚本时，每次点击确定按钮都会额外追加 .av 文件名后缀的问题 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;]]&gt;</description>
+      <pubDate>Mon, 12 Jan 2026 05:50:55 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.4</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.2.4/peerbanhelper.torrent" length="140968" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.2.3</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.3</guid>
       <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
