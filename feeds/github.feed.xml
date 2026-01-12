@@ -11,7 +11,7 @@
 &lt;ul&gt;
 &lt;li&gt;新增对 BitComet v2.20 Beta2 [20260107] 新增字节级流量统计数据 API 的支持，现在支持在 BitComet v2.20 Beta2 [20260107] 或更高版本上进行流量统计 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;[实验性] 新增对 BitComet v2.20 Beta2 [20260107] 的种子列表翻页 API 的支持 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT"&gt;PBH-BiglyBT-Adapter 扩展&lt;/a&gt;已更新至 v2.0.1 版本，以添加对 BiglyBT 的 Peer Flags 解析支持，可在连接统计模块中显示 BiglyBT 上的连接标志信息 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/PBH-BTN/PBH-Adapter-BiglyBT"&gt;PBH-BiglyBT-Adapter 扩展&lt;/a&gt;已更新至 v2.0.2 版本，以添加对 BiglyBT 的 Peer Flags 解析支持，可在连接统计模块中显示 BiglyBT 上的连接标志信息 @Ghost-chu @paulzzh&lt;/li&gt;
 &lt;li&gt;进一步改进对 Transmission 的实验性支持，解决当封禁列表为空时，发送给 Transmission 的响应被忽略的问题 @Ghost-chu &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;新功能&lt;/h2&gt;
