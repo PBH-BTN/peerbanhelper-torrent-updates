@@ -31,7 +31,12 @@
 &lt;li&gt;[WebUI] 修复因浏览器安全策略更改导致 AvaitorScript 编辑器无法再从 CDN 加载的问题 @Gaojianli &lt;/li&gt;
 &lt;li&gt;[WebAPI] 修复 BTN 拒绝列表版本描述和悬浮显示信息不一致的问题 @paulzzh &lt;/li&gt;
 &lt;li&gt;[WebUI] 修复通过 WebUI 保存 AvaitorScript 脚本时，每次点击确定按钮都会额外追加 .av 文件名后缀的问题 @Gaojianli &lt;/li&gt;
-&lt;/ul&gt;]]&gt;</description>
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.2.4&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.2.4&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; &lt;/p&gt;]]&gt;</description>
       <pubDate>Mon, 12 Jan 2026 05:50:55 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.2.4</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.2.4/peerbanhelper.torrent" length="140968" type="application/x-bittorrent"/>
