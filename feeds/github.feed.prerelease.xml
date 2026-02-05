@@ -5,6 +5,70 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v9.3.0-beta1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0-beta1</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;[!WARNING]&lt;br /&gt;
+请做好数据备份，一旦升级到此版本，将无法降级到稳定版。如需降级则必须从备份中还原所有文件。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+我们正在更新&lt;a href="https://github.com/PBH-BTN/terms"&gt;隐私政策&lt;/a&gt;，您可以&lt;a href="https://github.com/PBH-BTN/terms/pull/3"&gt;点击此处&lt;/a&gt;了解有关隐私政策的新更改。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+由于数据库基础设施的重大更改，请在升级时保留充足的磁盘空间，以便进行数据库升级。&lt;/p&gt;
+&lt;p&gt;[!NOTE]&lt;br /&gt;
+【Synology NAS】群晖用户请注意，由于原合作套件源矿神-SPK7软件源已计划关闭，版本更新速度可能受影响且将在未来停止服务。请您添加 PBH-BTN SPK 源，以接替并继续通过套件中心获取更新：&lt;code&gt;https://spk-repo.pbh-btn.com/nas&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新增对 H2、MySQL、PostgreSQL（预览版）数据源支持，您可以将数据保存在外部数据库，以便手动分析 @Ghost-chu @Gaojianli  @paulzzh @guohu7777 &lt;/li&gt;
+&lt;li&gt;针对信创和国产处理器架构设备，若 SQLite 无法在您的设备上运行，请考虑切换到 H2 或者 MySQL/PostgreSQL&lt;/li&gt;
+&lt;li&gt;更改需要在设置中切换，切换后需要重启才能生效&lt;/li&gt;
+&lt;li&gt;Postgres 的支持是实验性的&lt;/li&gt;
+&lt;li&gt;新增 PBH-BTN SPK 套件源，群晖 NAS 用户在正式版发布后可通过套件中心添加 PBH-BTN SPK 源并从该位置获取 PeerBanHelper 的后续更新 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;移除了 ORMLite 并切换到 MyBatis-Plus 框架，引入 Flyway 代替原本的 SQL 升级脚本，并完全重构了数据库基础设施，以便提升性能并为复杂查询奠定基础 @Ghost-chu @Gaojianli  @paulzzh @guohu7777 &lt;/li&gt;
+&lt;li&gt;取消了&lt;code&gt;-XX:SoftMaxHeapSize=386M&lt;/code&gt; 参数以改善在部分重度用户的设备上的 CPU 高使用情况 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;移除了部分不需要的 netty 组件以缩减安装包体积 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复了当 GeoIP 查询结果中对应 IP 地址没有国家/地区代码时，发生空指针异常的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;优化了 BanWave 中因反复创建线程池引起的额外 CPU 占用问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复了 TranslationComponent 为空时可能引发文本翻译空指针错误的问题 @Gaojianli&lt;/li&gt;
+&lt;li&gt;使用多线程加载功能模块，提高程序启动速度 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;后台任务修改为异步运行，提高了运行速度 @Gaojianli&lt;/li&gt;
+&lt;li&gt;优化了 “数据透视-&amp;gt;封禁日志” 页面数据的加载速度和 SQL 查询性能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;大幅优化了 “数据透视-&amp;gt;种子” 页面数据的加载速度和 SQL 查询性能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;优化了 “数据透视-&amp;gt;IP查询”里访问日志和封禁日志选项卡数据的加载速度和 SQL 查询性能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;优化了种群跟踪、Peer 分析服务、进度反作弊模块等使用 TorrentService 的整体性能和缓存设计 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;大幅优化了 “统计-&amp;gt;图表” 中的图表及其数据加载速度和 SQL 查询性能，特别是在长时间运行或存在大量任务的安装上 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;PortMapper 现在使用虚拟线程以优化性能 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;新增种子缓存功能，以大幅改善各封禁模块的整体性能 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复了当功能模块没有注册事件监听器时，在退出阶段报告 &lt;code&gt;java.lang.IllegalArgumentException: missing event subscriber for a n annotated method.&lt;/code&gt; 的错误 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 Transmission 下载器出现 IO 错误时，被错误的捕获为内部错误并处理的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复内存不足的情况下 ProgressCheatBlocker 和其它模块的内存缓存可能在逐出条目的时候报告空指针错误 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;实验性修复了当下载器流量统计数据回溯/清零时，PBH 的流量统计数据可能出现问题的错误 @paulzzh &lt;/li&gt;
+&lt;li&gt;移除了意外引入的 Install4j 的 &lt;code&gt;output.log&lt;/code&gt; 重定向功能，该功能可能导致非预期的大量磁盘空间占用 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复若升级时，用户拒绝了卸载程序的 UAC 权限请求，则可能导致安装损坏的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复了当 PeerBanHelper 启动时，大量长查询计划清理任务争夺连接，引发的急剧性能下降和 [SQLITE_BUSY] database is locked 错误 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;杂项&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;升级了 JBR 版本 @paulzzh @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;隐私政策透明度&lt;/h2&gt;
+&lt;p&gt;在新的版本中引入的遥测功能产生了对数据收集范围的更改。有关信息收集范围和如何退出请 &lt;a href="https://github.com/PBH-BTN/terms/pull/3"&gt;点击此处&lt;/a&gt; 以了解相关更改。  &lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanehelper-snapshot:sha-15b1e6e&lt;/code&gt;&lt;br /&gt;
+阿里云镜像加速: 测试版本不提供镜像加速&lt;/p&gt;]]&gt;</description>
+      <pubDate>Thu, 05 Feb 2026 14:38:55 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0-beta1</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.0-beta1/peerbanhelper.torrent" length="119867" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.0-alpha4</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0-alpha4</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -1743,30 +1807,6 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
       <pubDate>Sat, 12 Jul 2025 12:31:32 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.4-beta1</link>
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.4-beta1/peerbanhelper.torrent" length="83866" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.3</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.3</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复 IP 查询的访问记录中的下载器字段为 UUID 而非下载器名称的问题 @Ghost-chu @CreeperAWA&lt;/li&gt;
-&lt;li&gt;修复在非 Windows 平台上，vmoptions 文件引入功能失效的问题 @Ghost-chu @sunboyonly&lt;/li&gt;
-&lt;li&gt;撤销 simplejavamail 库的更改，还原使用 apache mail 库以解决罕见情况下初始化失败的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;为推送提供器初始化阶段增加异常处理，避免初始化失败阻止 PeerBanHelper 正常启动 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;调整&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;调整新用户 traffic-sliding-limit 的初始值到更加合理的值 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;禁用有些烦人的 “上次退出可能是异常退出” 的提示信息，因为现在的版本可以在遇到错误时自行重新启动，且 SWT UI 实际上并不能解决 Windows 平台上 awt.dll 崩溃的问题且该问题实际上无法被绕开 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.3&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.3&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sat, 12 Jul 2025 05:52:15 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.3</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.3/peerbanhelper.torrent" length="103348" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
