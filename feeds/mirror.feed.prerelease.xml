@@ -5,6 +5,44 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.3.1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.1</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!CAUTION]&lt;br /&gt;
+&lt;strong&gt;本版本包含对 v9.3.0 的重要安全漏洞修复，请您及时更新，并互相转告！&lt;/strong&gt;&lt;br /&gt;
+受影响版本：v9.3.0 正式版及其测试版本&lt;/p&gt;
+&lt;p&gt;[!TIP]&lt;br /&gt;
+【Synology DSM】群晖用户请注意，由于原合作套件源矿神-SPK7软件源计划停止服务，版本更新速度可能受影响且将在未来将关闭站点。请您添加 PBH-BTN SPK 源，以接替原矿神 SPK 源并继续通过套件中心获取更新：&lt;code&gt;https://spk-repo.pbh-btn.com/nas&lt;/code&gt; 谢谢！&lt;/p&gt;
+&lt;p&gt;[!TIP]&lt;br /&gt;
+v9.3.1 是 v9.3.0 的补丁版本，请您先阅读 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0"&gt;v9.3.0&lt;/a&gt; 更新日志。该版本包含较大变更。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;【重要！】安全漏洞修补&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复因新增的 WebAPI 接口缺少必要的鉴权，恶意攻击者可构造 API 请求发送至 PeerBanHelper OOBE API 接口，执行恶意攻击&lt;/li&gt;
+&lt;li&gt;攻击者可通过安全性弱点，在没有鉴权和速率限制的情况下，使用 PeerBanHelper 向任意地址发起 TCP 连接，或尝试登录目标设备的 PostgreSQL/MySQL 数据库。通过设计的恶意负载，可通过 JDBC 数据库驱动程序执行权限提升、远程代码执行，或者通过此弱点发起拒绝服务攻击&lt;/li&gt;
+&lt;li&gt;攻击者可通过安全性弱点，在没有鉴权和速率限制的情况下，请求 PeerBanHelper 强制配置文件重载。引起 CPU 高占用并对 PeerBanHelper 发起拒绝服务攻击，使速度变慢或停止响应&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;优化&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SQLite 现在支持读写池分离，以提高性能 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;进度反作弊模块现在在单 IP 解除封禁时，不再同时重置网段统计数据，以优化反吸血效果 @Ghost-chu  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复了执行长/频繁写操作时，因 LIFO 下的线程争用，导致排队的其它线程无法获取 SQLite 数据库连接引发错误的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;拆分了长/频繁写操作为更短更快的小查询 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 GeoCN 数据库执行查询操作时，如果 MMDB 提供了部分字段的空值数据，则可能引发空指针异常的问题 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;修复了正式版报告测试版警告的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.1&lt;/code&gt;&lt;br /&gt;
+阿里云镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; &lt;/p&gt;]]&gt;</description>
+      <pubDate>Mon, 09 Feb 2026 15:14:06 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.1</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.1/peerbanhelper.torrent" length="121988" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.0</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -1834,31 +1872,6 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
       <pubDate>Sun, 13 Jul 2025 11:07:33 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5-beta2</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.5-beta2/peerbanhelper.torrent" length="87246" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.5-beta1</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5-beta1</guid>
-      <description>&lt;![CDATA[&lt;blockquote&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据可能不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;[!WARNING]&lt;br /&gt;
-这是一个实验性更新，由于存在潜在问题，封禁性能可能不稳定，请注意监控 PBH 的运行状态&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2&gt;内部更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;移除 Methanol 库，全面更换为 okhttp 库以避免潜在的 selector manager closed 错误，并对后续域前置请求做技术准备&lt;/li&gt;
-&lt;li&gt;HTTP 版本现在自动检测，忽略前台指定的 HTTP 版本字段。现在支持 HTTP 1.0, 1.1, 2, 3&lt;/li&gt;
-&lt;li&gt;现在支持连接合并重用，并发 HTTP 请求可降低下载器处理大量并发连接的压力&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;本版本也包含 v8.0.4-beta1 所提到的 awt.dll 相关修复。&lt;/p&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper-snapshot:sha-ea5d489&lt;/code&gt;  &lt;br /&gt;
-测试版本不提供国内镜像源加速。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sat, 12 Jul 2025 18:49:09 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5-beta1</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.5-beta1/peerbanhelper.torrent" length="103367" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
