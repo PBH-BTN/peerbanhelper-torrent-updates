@@ -5,6 +5,34 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.3.2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.2</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!TIP]&lt;br /&gt;
+【Synology DSM】群晖用户请注意，由于原合作套件源矿神-SPK7软件源计划停止服务，版本更新速度可能受影响且将在未来将关闭站点。请您添加 PBH-BTN SPK 源，以接替原矿神 SPK 源并继续通过套件中心获取更新：&lt;code&gt;https://spk-repo.pbh-btn.com/nas&lt;/code&gt; 谢谢！&lt;/p&gt;
+&lt;p&gt;[!TIP]&lt;br /&gt;
+v9.3.1 / v9.3.2 是 v9.3.0 的补丁版本，请您先阅读 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.0"&gt;v9.3.0&lt;/a&gt; 更新日志。该版本包含较大变更。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 Druid 连接池引发的 H2/MySQL 兼容问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 BTN 错误信息占位符故障 @XiaoBu39 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将 PeerRecording 删除任务切分为小段，并在后台执行清理工作，避免长查询导致封禁操作卡死 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;BTN 网络&lt;/h2&gt;
+&lt;p&gt;近期 BTN 网络处于高负载状态，由于服务器已超过最大承载能力，当前 BTN 服务可能不稳定或不可用。我们正在着手解决该问题，但可能需要一段时间。&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.2&lt;/code&gt;&lt;br /&gt;
+阿里云镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.2&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; &lt;/p&gt;]]&gt;</description>
+      <pubDate>Tue, 10 Feb 2026 18:20:13 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.2/peerbanhelper.torrent" length="117608" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.1</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
