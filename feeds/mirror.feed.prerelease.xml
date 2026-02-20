@@ -5,6 +5,29 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.3.6</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.6</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;调整 BiglyBT 上的活跃种子判定条件，减少活动种子数，缩短检测耗时 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;删除数据时，只选中必要的字段，加快删除速度，减少磁盘 I/O @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 Install4j 裁剪的 JVM 无法进行堆内存转储的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;撤销内存参数调整，还原旧版本内存回收行为，解决部分用户设备上内存占用虚高的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 IPDB 数据库下载/初始化失败后，仍然进行查询产生空指针错误的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.6&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.6&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Fri, 20 Feb 2026 13:50:51 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.6</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.6/peerbanhelper.torrent" length="117828" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.5</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.5</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
@@ -1865,41 +1888,6 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
       <pubDate>Wed, 16 Jul 2025 07:07:44 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.6</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.6/peerbanhelper.torrent" length="87227" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.5</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复日志等级启动参数不起作用的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复种子访问记录页面显示的是下载器 ID 而非下载器名称的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 Windows 环境下 AWT 崩溃问题 @Ghost-chu ，参见 内部更改-1&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;改进&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;异步 BTN Network 热重载 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;从 Methanol 切换到 OkHttp 以修复 HttpClient 的潜在错误，并支持连接重用和完整的 HTTP/2 协议实现；当链接地址包含多个 IP 地址时，现在支持 Happy Eyeballs 快速回落提升连接速度 @Ghost-chu @CreeperAWA&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;内部更改&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;切换到 JetBrains Runtime 并降级到 Java 21 以解决 Windows 平台下的 awt.dll 崩溃问题（使用 nojava 升级的用户需要使用完整安装包升级/覆盖安装）建议 Windows 用户升级到此版本 @Ghost-chu @paulzzh &lt;/li&gt;
-&lt;li&gt;SWT 和 QT6 的 UI 有关代码和文件现已删除，因为其完成了历史使命 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;将 EcoQos 实现从 C++ 切换到 JNA 以去除对 Native DLL 文件的依赖 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;WatchDog 新增线程死锁检测，如果出现锁定输出互锁线程 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;移除&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;移除 SWT UI 及其所有相关组件和文件，其历史使命已经完成 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;移除未使用的 QT UI 相关代码 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.5&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.5&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sun, 13 Jul 2025 16:38:40 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.5</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.5/peerbanhelper.torrent" length="87227" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
