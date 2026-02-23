@@ -5,6 +5,29 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.3.7</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.7</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;操作系统平台支持&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;重新添加对 Windows 7 (64位) 操作系统的支持 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;Windows 7 用户请下载带有 &lt;em&gt;win7&lt;/em&gt; 字样的专用安装程序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复完成 OOBE 时可能错误提示 “OOBE 重复初始化”，且配置需要重启生效的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 Portable 版 PeerBanHelper 启动脚本错误导致无法启动的问题 @0x391F&lt;/li&gt;
+&lt;li&gt;修复 GeoIP MMDB 因文件被占用下载失败的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.7&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.7&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN BBS&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Mon, 23 Feb 2026 13:48:38 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.7</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.7/peerbanhelper.torrent" length="126748" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.6</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.6</guid>
       <description>&lt;![CDATA[&lt;h2&gt;改进&lt;/h2&gt;
@@ -1855,39 +1878,6 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
       <pubDate>Wed, 16 Jul 2025 09:56:34 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.7</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.7/peerbanhelper.torrent" length="87227" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.6</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.6</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;修复 PeerBanHelper 的跟随系统代理未按预期工作的问题。为避免歧义，跟随系统代理功能现已删除，仅保留 “不使用代理”、“使用 HTTP 代理”、“使用 Socks5 代理” 三个选项 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;不论如何，现在访问下载器 API 时均不使用任何代理设置，以避免请求被错误代理到远端代理服务器&lt;/li&gt;
-&lt;li&gt;同时修复了代理忽略列表未按预期工作的问题&lt;/li&gt;
-&lt;li&gt;同时修复了 Socks5 代理设置不起效果的问题&lt;/li&gt;
-&lt;li&gt;同时修复了 ProxySelector 未按预期工作的问题，现在不再跟随 Java 代理参数设置&lt;/li&gt;
-&lt;li&gt;原来选择 “跟随系统代理” 的用户，本次将自动更新为 “不使用代理”&lt;/li&gt;
-&lt;li&gt;修复在 IP 查询中查询多个 IP 地址时，访问记录列表的查询结果可能总是第一次查询的 IP 地址的内容 @Gaojianli @CreeperAWA&lt;/li&gt;
-&lt;li&gt;修复进度作弊检查封禁时间的分支封禁错误跟随全局封禁时间设定的问题 @Ghost-chu @WordlessEcho&lt;/li&gt;
-&lt;li&gt;修复进度作弊检查模块在检查用户曾下载过但删除重新下载的种子上的 Peer 时检查可能出现错误封禁的问题 @Ghost-chu @WordlessEcho&lt;/li&gt;
-&lt;li&gt;修复在非支持的语言环境中运行 PeerBanHelper 时，i18n 回退系统故障导致报告 &lt;code&gt;Unsupported locale&lt;/code&gt; 错误信息的问题 @Ghost-chu &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;更改&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;移除下载器编辑页面的 HTTP 版本选择器，现在 HTTP 版本由 OkHttp 自动管理和升级 @Ghost-chu &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;实验室&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;新增 “Win32平台：清空工作集” 实验&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.6&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.6&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Wed, 16 Jul 2025 07:07:44 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.6</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.6/peerbanhelper.torrent" length="87227" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
