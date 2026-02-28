@@ -5,6 +5,43 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v9.3.8</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.8</guid>
+      <description>&lt;![CDATA[&lt;blockquote&gt;
+&lt;p&gt;[!TIP]&lt;br /&gt;
+【Synology DSM】群晖用户请注意，由于原合作套件源矿神-SPK7软件源计划停止服务，版本更新速度可能受影响且将在未来将关闭站点。请您添加 PBH-BTN SPK 源，以接替原矿神 SPK 源并继续通过套件中心获取更新：&lt;code&gt;https://spk-repo.pbh-btn.com/nas&lt;/code&gt; 谢谢！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在长达一个月的迭代后，我们很高兴的宣布 v9.3.x 版本分支将进入稳定版本阶段。在过去两周的时间内，我们的遥测服务没有发现新的重要错误或者性能问题。这也意味着 v9.3.x 系列将替代 v9.2.x 成为新的稳定版本分支。针对 v9.2.x 的支持将逐步停止。&lt;/p&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当 BTN IP 允许列表更新后，处于允许列表中的已被封禁 IP 地址没有正确解除封禁 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;更换回常规 JDK，修复了 AutoSTUN 等等不能正常工作的问题 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;修复 AutoSTUN 的 UPnP 端口映射与网关发现的相关问题 @Ghost-chu @paulzzh  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;非 PeerBanHelper 的其它更改&lt;/h2&gt;
+&lt;h3&gt;PBH-BTN BBS&lt;/h3&gt;
+&lt;p&gt;国内针对 BitTorrent 的讨论大量分散在各视频网站评论区、PT 站私有论坛中。在 2024-2025 初期，反吸血的相关内容一度只能依靠腾讯文档在各个群组之间人力传播。各站点有关 BitTorrent 的信息时间跨度十年有余，许多信息均已过时，甚至带有误导性。因此 PBH-BTN 推出了 &lt;a href="https://bbs.pbh-btn.com/"&gt;PBH-BTN BBS&lt;/a&gt;。这是一个以 BitTorrent 为主题的综合性讨论社区，全站支持全文 RSS 和邮件通知推送。  &lt;/p&gt;
+&lt;p&gt;我们希望该社区能够成为中文 BitTorrent 交流的一个聚集地，减少信息摩擦，成为一个高效的 BT 主题讨论社区。  &lt;/p&gt;
+&lt;p&gt;欢迎将地址收藏到您的收藏夹：https://bbs.pbh-btn.com&lt;/p&gt;
+&lt;h3&gt;Sparkle BTN3&lt;/h3&gt;
+&lt;p&gt;我们已完成对 BTN3 数据库系统的查询引擎改造，现在查询性能有明显提升。伴随春节高负载高峰的结束，在完成更多测试后，将逐渐回调 BTN 各项反吸血能力。&lt;/p&gt;
+&lt;p&gt;同时，我们还推出了针对固定 seedbox 和字幕组/压制组/发布组等资源发布组织的发种鸡的 “关联 IP 豁免” 能力。能够有效避免因误操作导致出现进度回退后，因大量封禁记录报告导致做种机 IP 地址遭到封禁的问题。&lt;/p&gt;
+&lt;p&gt;现在可以&lt;a href="https://bbs.pbh-btn.com/d/58"&gt;申请加入 IP 豁免&lt;/a&gt;，登记的 BTN 用户应用程序对应的关联 IP 地址将自动进入 BTN IP 允许列表中，不会被与 BTN 连接 PeerBanHelper 封禁，并忽略反吸血检查。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;理论上，如果您的服务器运行很好没有崩溃导致文件丢失过，那么一般不需要申请此项。&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;PBH-BTN 种群加速计划 (SwarmAccelerator)&lt;/h3&gt;
+&lt;p&gt;该项目在稍早前已经试运行了一个月。许多朋友可能已经见过  &lt;code&gt;BiglyBT 4.0.0.0 (PBH-BTN Swarm Accelerator/1.0)&lt;/code&gt; 这个客户端名称了。&lt;/p&gt;
+&lt;p&gt;该计划为 PBH-BTN 充分利用现有服务器资源，对新 BT 资源（特别是热门资源）进行分流加速的企划。通过 RSS 订阅和特殊算法，通过 PBH-BTN 的数据中心服务器进行分流加速做种。&lt;/p&gt;
+&lt;p&gt;欢迎关注我们的项目仓库，并随时窥屏运行状态：https://github.com/PBH-BTN/SwarmAccelerator-Project&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.8&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.8&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN BBS&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 28 Feb 2026 19:01:52 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.8</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.8/peerbanhelper.torrent" length="136688" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.7</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.7</guid>
       <description>&lt;![CDATA[&lt;h2&gt;操作系统平台支持&lt;/h2&gt;
@@ -1074,30 +1111,6 @@ AutoSTUN 可以在 NAT 出口的 IP 地址上打开一个端口，以获得近�
       <pubDate>Fri, 18 Jul 2025 15:56:06 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.8</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.8/peerbanhelper.torrent" length="87247" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v8.0.7</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.7</guid>
-      <description>&lt;![CDATA[&lt;p&gt;v8.0.7 是 v8.0.6 的热补丁。&lt;/p&gt;
-&lt;h2&gt;修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复 WebUI 网络代理设置向后端传递值不正确的问题，导致无法设置 Socks5 代理，且按钮和实际效果不匹配的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 WebUI 网络代理设置仍然显示跟随系统代理设置的选项的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 Swing UI 窗口标题后面的附加文本重复的问题 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;已知问题&lt;/h2&gt;
-&lt;h3&gt;WebUI的代理服务器指示器不正确&lt;/h3&gt;
-&lt;p&gt;请按照下图为准&lt;/p&gt;
-&lt;p&gt;&lt;img width="796" height="91" alt="Image_1752660974308" src="https://github.com/user-attachments/assets/f63db20d-e95c-4819-bd04-876aecf7c98f" /&gt;&lt;/p&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v8.0.7&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v8.0.7&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;注记：由于家里断网数天，加之移动网络信号极差。本版本发布后除非严重错误，否则其它更新将向后推迟暂缓。&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Wed, 16 Jul 2025 09:56:34 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v8.0.7</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v8.0.7/peerbanhelper.torrent" length="87227" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
