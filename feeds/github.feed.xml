@@ -5,6 +5,39 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.3.14</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.14</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;调整&lt;/h2&gt;
+&lt;p&gt;自 2026 年 7 月起，我们将逐步停止原 2024-2025 期间使用的临时域名 &lt;code&gt;*.ghostchu-services.top&lt;/code&gt;，并迁移相关服务至 &lt;code&gt;pbh-btn.com&lt;/code&gt; 正式域名下。原有域名将在 2027 年 2 月停止续费，并永久终止服务。  &lt;/p&gt;
+&lt;p&gt;通过升级到此修补版本，PeerBanHelper 将为您自动更新截至上一版本中仍在使用旧 API 域的配置项到最新的正式域名，无需任何其它额外操作。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原 &lt;code&gt;ghostchu-services.top&lt;/code&gt; 域开始启动废弃程序，替换至新服务域 &lt;code&gt;pbh-btn.com&lt;/code&gt;。升级到此版本将自动完成配置文件升级。@Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;新的映射关系更改如下：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BTN 规则订阅更新地址&lt;/li&gt;
+&lt;li&gt;原地址：&lt;code&gt;https://bcr.pbh-btn.ghorg.ghostchu-services.top/*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新地址：&lt;code&gt;https://bcr.pbh-btn.com/*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;BTN Bootstrap 配置启动地址&lt;/li&gt;
+&lt;li&gt;原地址（2024-2025上半年）：&lt;code&gt;https://btn-prod.ghostchu-services.top/ping/config&lt;/code&gt;, &lt;code&gt;https://sparkle.ghostchu-services.top/ping/config&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;新地址：&lt;code&gt;https://sparkle.ghostchu.com/ping/config&lt;/code&gt; (中国大陆中继节点), &lt;code&gt;https://sparkle.pbh-btn.com/ping/config&lt;/code&gt; (全球节点)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;尝试修复 PostgreSQL 驱动出现有关 percent 的字段报错问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;(dev 向前移植) 修复虚拟线程调度器使用不当，导致虚拟线程被意外池化的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;(dev 向前移植) 修复 PBH Plus 许可证吊销系统从未工作的问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.14&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.14&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Sat, 06 Jun 2026 11:52:58 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.14</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.14/peerbanhelper.torrent" length="137851" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.13</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.13</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
