@@ -5,6 +5,27 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror]</description>
     <item>
+      <title>v9.3.15</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.15</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;将恶意客户端 &lt;code&gt;Gopeed bt-exp&lt;/code&gt; 添加到默认封禁列表。升级到此版本后此规则将自动更新至配置文件 @paulzzh &lt;/li&gt;
+&lt;li&gt;考虑到截至发版时，Gopeed 仍有新样本出现，建议连接到 BTN 网络，以便发现新的样本时通过 BTN 规则下发新的规则库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复 SQL 注入安全漏洞 (&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/security/advisories/GHSA-pc89-mfwm-hj9x"&gt;GHSA-pc89-mfwm-hj9x&lt;/a&gt;) 由 @imlonghao 报告 @Ghost-chu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.3.15&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.3.15&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Fri, 26 Jun 2026 10:40:03 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.15</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.3.15/peerbanhelper.torrent" length="137851" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.3.14</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.3.14</guid>
       <description>&lt;![CDATA[&lt;h2&gt;调整&lt;/h2&gt;
