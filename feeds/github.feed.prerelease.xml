@@ -5,8 +5,8 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
-      <title>v9.4.0-beta1</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.0-beta1</guid>
+      <title>v9.4.0-beta2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.0-beta2</guid>
       <description>&lt;![CDATA[&lt;blockquote&gt;
 &lt;p&gt;[!WARNING]&lt;br /&gt;
 此版本为&lt;strong&gt;测试版本&lt;/strong&gt;，可能并不稳定或者存在严重问题。此版本仅用于高阶用户尝鲜和测试用途，请勿用于生产环境。使用测试版本前，请做好数据备份，测试版本数据不保证可平滑升级到稳定版本。普通用户请下载&lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/latest"&gt;最新正式版&lt;/a&gt;。&lt;/p&gt;
@@ -15,6 +15,12 @@
 &lt;/blockquote&gt;
 &lt;p&gt;v9.4.0 版本是 PBH-BTN 对现有底层代码做出的一次重构尝试，旨在解决目前封禁流程中存在的性能瓶颈和已知问题。尽管这些问题不会在短期内全部得到解决，但我们仍会随着版本更新着手逐步解决它们。&lt;br /&gt;
 与往常一样，在升级到测试版本前，请注意备份当前数据。在使用测试版程序中如遇到了问题，欢迎打开 Issues 向我们反馈。&lt;/p&gt;
+&lt;h2&gt;相对于 beta1 的改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复了前端选单被禁用的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;更新 credit.txt 和开发人员与社区贡献者的关于窗口内容和视觉效果 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;为处于 IO 阻塞状态的任务添加 &amp;gt;IO&amp;lt; 标记 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2&gt;新功能&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;通知推送渠道支持 Ntfy @gongfuture&lt;/li&gt;
@@ -39,7 +45,6 @@
 &lt;li&gt;重构 PBH 内存缓存系统，现在支持延迟回写和合批回写，PeerConnectionMetricsTrackService, TrackedSwarmService, PeerRecordingService 和 ProgressCheatBlocker 现已支持新的内存缓存系统，以缓解磁盘 IO 压力，减少写入量 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;重构缓存系统，统一缓存处理工具 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;所有调度器转为虚拟线程专用调度器以减少平台线程数量 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;[Security] 对于未授权登录的请求，现在不再显示已激活的封禁模块，以改善安全性 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;重构系统颜色检测器，现在能够检测主流OS和DE的系统颜色，并减少对native层的依赖 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;重构封禁统计信息内存计数器，减轻 CPU 压力 @Ghost-chu &lt;/li&gt;
 &lt;li&gt;重构 WatchDog 机制，减少看门狗运行时的 CPU 使用 @Ghost-chu &lt;/li&gt;
@@ -75,9 +80,9 @@
 阿里云国内镜像加速: 测试版本不提供国内镜像加速&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sun, 05 Jul 2026 13:14:06 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.0-beta1</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.4.0-beta1/peerbanhelper.torrent" length="134367" type="application/x-bittorrent"/>
+      <pubDate>Sun, 05 Jul 2026 17:31:28 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.0-beta2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.4.0-beta2/peerbanhelper.torrent" length="134387" type="application/x-bittorrent"/>
     </item>
     <item>
       <title>v9.3.16</title>
