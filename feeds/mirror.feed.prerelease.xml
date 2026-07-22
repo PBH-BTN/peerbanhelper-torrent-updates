@@ -5,6 +5,34 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases [Mirror] (Including Pre-releases)</description>
     <item>
+      <title>v9.4.2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.2</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;[webui] 日志从 websocket 更换为 服务器发送事件 (SSE) @Ghost-chu @Gaojianli @paulzzh &lt;/li&gt;
+&lt;li&gt;[webui] 禁止 OOBE 时选择高级数据库 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;禁用了插件管理模块 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;现在 pbh 的 bt 构建改为使用 torrenttools 以支持分块对齐 @paulzzh&lt;/li&gt;
+&lt;li&gt;更新了 flyway 和 install4j&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;为数据库添加测试 修复了多个外部数据库问题 @paulzzh&lt;/li&gt;
+&lt;li&gt;调整调度器线程数量 避免在 cpu 核心较多时产生性能浪费 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;修复多个 pcb 相关的唯一键并发冲突问题 @Ghost-chu&lt;/li&gt;
+&lt;li&gt;autostun 默认禁用 io_uring 以避免问题 @paulzzh @Ghost-chu&lt;/li&gt;
+&lt;li&gt;更新 oshi 依赖以解决 windows 上的 ffm 调用失败回归 @paulzzh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.4.2&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.4.2&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 22 Jul 2026 14:00:01 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.2</link>
+      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.4.2/peerbanhelper.torrent" length="25936" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.4.1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.4.1</guid>
       <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
@@ -1721,28 +1749,6 @@ v9.1.1 是 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.
       <pubDate>Fri, 26 Sep 2025 16:24:05 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.3</link>
       <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.3/peerbanhelper.torrent" length="125228" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v9.0.2</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.2</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;修复 qBittorrent &amp;lt;= 5.1.2 版本中，当活动种子数量恰好为 100 的倍数时，因 https://github.com/qbittorrent/qBittorrent/issues/22158 错误导致 PeerBanHelper 陷入死循环并导致内存泄漏的问题 @paulzzh &lt;/li&gt;
-&lt;li&gt;修复 PeerFlag 的两个字段解析问题 @paulzzh &lt;/li&gt;
-&lt;li&gt;修复 Avaitor Script Editor 加载失败的问题 @Gaojianli &lt;/li&gt;
-&lt;li&gt;修复了 renew 许可时可能出现 PoW 挑战失败的问题。由于浏览器安全上下文限制，请通过 localhost 访问或者添加 HTTPS 代理 @Gaojianli &lt;/li&gt;
-&lt;li&gt;修复 STUN 服务器集中一个服务器返回非预期响应时会导致整个 NAT 探测中断失败 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 WebUI 的 Internet 访问字段固定为 Unknown 的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;修复 WebUI 的日志在一段时间后停止工作的问题 @Ghost-chu &lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.2&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.2&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Wed, 24 Sep 2025 06:47:44 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.2</link>
-      <enclosure url="https://ghfast.top/https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.2/peerbanhelper.torrent" length="125228" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
