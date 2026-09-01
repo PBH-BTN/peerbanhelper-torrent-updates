@@ -5,6 +5,39 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases</description>
     <item>
+      <title>v9.5.1</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.1</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;修复安全漏洞&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Orderable 查询可能传入 SQL 注入语句的问题 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/security/advisories/GHSA-vpxv-cm55-rwf7"&gt;GHSA-vpxv-cm55-rwf7&lt;/a&gt; @Ghost-chu 鸣谢：@tonghuaroot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;NAT64 地址支持 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;目前默认支持 WKP 的 NAT64 地址。由于无法可靠探测某个网络是否为 NAT64 网络，因此如果您正在使用 NSP 的 NAT64 地址，请手动编辑配置文件。&lt;/li&gt;
+&lt;li&gt;新的 webhook 通知渠道 @gongfuture  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;封禁列表重映射未正确处理 Teredo 地址 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复在较新的 DSM 上，安装 PeerBanHelper 可能出现错误的问题 @Ghost-chu&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;开发者更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;PeerAddress 现在包含新的 &lt;code&gt;teredoClientIp&lt;/code&gt; 和 &lt;code&gt;teredoClientUdpPort&lt;/code&gt; 字段，指示 Teredo 有关的 IP 元数据&lt;/li&gt;
+&lt;li&gt;PeerAddress 的 &lt;code&gt;nattedIp&lt;/code&gt; 和 &lt;code&gt;nattedPort&lt;/code&gt; 除原 AutoSTUN 地址转换使用外，现在 NAT64 地址转换也将会更新这些字段。&lt;/li&gt;
+&lt;li&gt;现在规则检查模块无需为了转换 ::ffff: 地址进行刻意的 &lt;code&gt;isIPv4Convertible&lt;/code&gt; 检查，PeerBanHelper 现在统一处理这些转换。这包括：Well-Knowned NAT64地址(RFC-6146, RFC-6052)、Teredo 地址(RFC-4380, RFC-5991)、IPv4-mapped IPv6 地址(RFC-4291, RFC-4038)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.5.1&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.5.1&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Tue, 01 Sep 2026 12:14:26 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.1</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.5.1/peerbanhelper.torrent" length="19554" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.5.0</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.0</guid>
       <description>&lt;![CDATA[&lt;h2&gt;新增功能&lt;/h2&gt;
@@ -1029,27 +1062,6 @@ v9.1.1 是 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.
       <pubDate>Sun, 12 Oct 2025 12:18:50 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.9</link>
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.9/peerbanhelper.torrent" length="125248" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v9.0.8</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.8</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;修复 IP 类型封禁的 “数据中心” 不起效果的问题 @Ghost-chu&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;其它调整&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;网络接口变动触发的 UPNP 设备重新扫描现在日志等级调整为 DEBUG @Ghost-chu &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.8&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.8&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;你知道吗：我们最近上线了测试版的国内文档镜像站，用于改善中国大陆用户的文档浏览体验，你可以&lt;a href="https://pbh-docs.ghostchu.com"&gt;点此&lt;/a&gt;访问镜像站点。新的镜像站点由 EdgeOne Pages 驱动。测试期间，站点可能随时发生更改或者关闭。&lt;/em&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Fri, 10 Oct 2025 16:51:48 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.8</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.8/peerbanhelper.torrent" length="125248" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
