@@ -5,6 +5,59 @@
     <link>https://github.com/PBH-BTN/PeerBanHelper/releases</link>
     <description>PeerBanHelper Releases (Including Pre-releases)</description>
     <item>
+      <title>v9.5.3</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.3</guid>
+      <description>&lt;![CDATA[&lt;p&gt;v9.5.3 是 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.2"&gt;v9.5.2&lt;/a&gt; 的热补丁更新。&lt;/p&gt;
+&lt;h2&gt;规则更新&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;新增 &lt;code&gt;Gopeed bt-&lt;/code&gt; 规则 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.5.3&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.5.3&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 28 Oct 2026 13:12:10 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.3</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.5.3/peerbanhelper.torrent" length="19254" type="application/x-bittorrent"/>
+    </item>
+    <item>
+      <title>v9.5.2</title>
+      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.2</guid>
+      <description>&lt;![CDATA[&lt;h2&gt;下载器兼容性&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;现在兼容 BitComet v2.23 版本 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;新功能&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;WebUI 编辑 AvaitorScript 脚本现在会进行语法检查 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;错误修复&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;修复部分 Linux 发行版系统代号中存在非 ASCII 字符，导致 HTTP 请求出现非预期行为的问题 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复在特定情况下，AutoSTUN 可能错误使用 STUN 服务器的 IPv6 地址 @Ghost-chu &lt;/li&gt;
+&lt;li&gt;修复 AutoSTUN 任一服务器没有返回响应时，结果被设置为 UDPBlocked 而非 Unknown，现在 UDPBlocked 仅在所有 STUN 服务器尝试失败时显示 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;更改&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install4j 安装包现已升级捆绑 JDK 版本以修复安全性问题 (CVE-2026-91403) @Ghost-chu &lt;/li&gt;
+&lt;li&gt;升级了其它依赖项 @Gaojianli &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;安全性改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;由官方打包的所有 PeerBanHelper 软件包现在开启 &lt;code&gt;-Dcom.sun.net.ssl.checkRevocation=true -Dcom.sun.security.enableCRLDP=true&lt;/code&gt; 对证书吊销进行验证，以缓解由 eMudhra intermediate CA certificates 带来的安全性问题 @Ghost-chu &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img width="1024" height="369" alt="image" src="https://github.com/user-attachments/assets/f1342a22-761e-42f3-b592-7f80f4f60ab5" /&gt;&lt;/p&gt;
+&lt;h2&gt;Docker&lt;/h2&gt;
+&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.5.2&lt;/code&gt;&lt;br /&gt;
+阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.5.2&lt;/code&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt; | &lt;a href="https://bbs.pbh-btn.com"&gt;PBH-BTN 论坛&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
+      <pubDate>Wed, 28 Oct 2026 11:11:56 GMT</pubDate>
+      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.2</link>
+      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.5.2/peerbanhelper.torrent" length="19254" type="application/x-bittorrent"/>
+    </item>
+    <item>
       <title>v9.5.1</title>
       <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.5.1</guid>
       <description>&lt;![CDATA[&lt;h2&gt;修复安全漏洞&lt;/h2&gt;
@@ -1775,45 +1828,6 @@ v9.1.1 是 &lt;a href="https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.
       <pubDate>Tue, 18 Nov 2025 11:07:43 GMT</pubDate>
       <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.1.0-alpha3</link>
       <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.1.0-alpha3/peerbanhelper.torrent" length="139610" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v9.0.10</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.10</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;修复 MacOS 平台上 GUI 程序卡死的问题 @Ghost-chu &lt;/li&gt;
-&lt;li&gt;在位于 Proxmox 的 KVM 虚拟机中进行的测试，实际修复效果请以实机测试为准&lt;/li&gt;
-&lt;li&gt;修复 WebUI 视觉错误 @Gaojianli &lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;其他事宜&lt;/h2&gt;
-&lt;p&gt;针对近期更新的 &lt;a href="https://tixati.com/specs/bittorrent/v3"&gt;BitTorrent Protocol Version 3&lt;/a&gt; 和 &lt;a href="https://tixati.com/specs/bittorrent/v3.1"&gt;BitTorrent Protocol Version 3.1&lt;/a&gt;，即第三版 BT 协议，PeerBanHelper 和 BTN 服务端程序应该能在下载器更新其支持后，无缝兼容相关更改。因为我们并不收集实际的 info_hash，而是基于 info_hash 的二次匿名加盐哈希值。&lt;/p&gt;
-&lt;p&gt;请注意上面的新增协议由 Tixati 提起，但尚未成为标准或事实标准。相关兼容性信息仅供参考。&lt;br /&gt;
-有关其在更广泛范围内的讨论，请参见：https://github.com/arvidn/libtorrent/issues/8047 和 https://github.com/qbittorrent/qBittorrent/issues/23421&lt;/p&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.10&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.10&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sun, 26 Oct 2025 19:44:58 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.10</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.10/peerbanhelper.torrent" length="124891" type="application/x-bittorrent"/>
-    </item>
-    <item>
-      <title>v9.0.9</title>
-      <guid isPermaLink="true">https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.9</guid>
-      <description>&lt;![CDATA[&lt;h2&gt;错误修复&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;修复 zh_cn 的语言文件内容被强制注册给 en_us 语言代码的问题 @Ghost-chu&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Docker&lt;/h2&gt;
-&lt;p&gt;DockerHub: &lt;code&gt;ghostchu/peerbanhelper:v9.0.9&lt;/code&gt;&lt;br /&gt;
-阿里云国内镜像加速: &lt;code&gt;registry.cn-hangzhou.aliyuncs.com/ghostchu/peerbanhelper:v9.0.9&lt;/code&gt;&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;a href="https://docs.pbh-btn.com/docs/category/%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2"&gt;部署教程&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/faq"&gt;常见问题&lt;/a&gt; | &lt;a href="https://docs.pbh-btn.com/docs/category/%E4%B8%8B%E8%BD%BD%E5%99%A8%E9%85%8D%E7%BD%AE"&gt;如何设置下载器&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;你知道吗：我们最近上线了测试版的国内文档镜像站，用于改善中国大陆用户的文档浏览体验，你可以&lt;a href="https://pbh-docs.ghostchu.com"&gt;点此&lt;/a&gt;访问镜像站点。新的镜像站点由 EdgeOne Pages 驱动。测试期间，站点可能随时发生更改或者关闭。&lt;/em&gt;&lt;/p&gt;]]&gt;</description>
-      <pubDate>Sun, 12 Oct 2025 12:18:50 GMT</pubDate>
-      <link>https://github.com/PBH-BTN/PeerBanHelper/releases/tag/v9.0.9</link>
-      <enclosure url="https://github.com/PBH-BTN/PeerBanHelper/releases/download/v9.0.9/peerbanhelper.torrent" length="125248" type="application/x-bittorrent"/>
     </item>
   </channel>
 </rss>
